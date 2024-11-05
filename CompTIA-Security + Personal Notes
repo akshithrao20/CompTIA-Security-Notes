@@ -1,0 +1,2274 @@
+Notes on "How to Pass Your SY0701 Security+ Exam"
+
+Video Information
+Title: How to Pass Your SY0701 Security+ Exam
+Link: [Watch the Video](https:www.youtube.comwatch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqKhOnoqcSKEIDDuv)
+
+Introduction
+The Security+ certification validates foundational cybersecurity skills and is essential for IT professionals. This video provides strategies and insights for effectively preparing for the SY0701 exam.
+
+Key Points
+
+1. Exam Structure:
+    Format: Multiplechoice and performancebased questions.
+    Duration: 90 minutes to complete the exam.
+    Passing Score: Generally around 750 out of 900.
+
+2. Domains Covered:
+    Threats and Vulnerabilities: Types of threats (malware, phishing) and their mitigation.
+    Risk Management: Understanding risk assessment, mitigation strategies, and incident response.
+    Security Architecture and Design: Principles of secure network design, concepts of zoning and segmentation.
+
+3. Study Resources:
+    Books: Recommended texts such as the CompTIA Security+ Study Guide.
+    Online Courses: Platforms like Udemy or Coursera offer courses tailored to the SY0701 exam.
+    Practice Exams: Utilize tools like MeasureUp or ExamCompass for mock tests.
+
+4. Preparation Tips:
+    Study Techniques: Utilize flashcards for key terms, join study groups for discussions.
+    Time Management: Create a study schedule leading up to the exam date.
+
+5. Practice Tests:
+    Taking multiple practice exams to familiarize with question formats and timing.
+    Reviewing incorrect answers to understand weaknesses.
+
+6. Exam Day Strategies:
+    Arrive early, bring required identification, and manage anxiety with deep breathing techniques.
+    Read each question carefully and eliminate clearly wrong answers to improve guessing odds.
+
+Personal Reflections
+This video emphasizes the importance of thorough preparation and handson experience. Engaging with the content actively through practice tests and group studies enhances retention and confidence.
+
+Additional Resources
+CompTIA’s Official Resources: Visit [CompTIA](https:www.comptia.org) for official study materials and exam objectives.
+Online Forums: Join Reddit or TechExams community for discussions and tips from others preparing for the exam.
+
+
+
+Security Controls:
+
+1. Technical Controls:
+
+These are the controls which are implemented using technical systems.
+
+Example: Firewalls, Antivirus & other kinds of software
+
+1. Managerial Controls:
+
+Creating a series of policies or procedures that explain to people, the best way to manage computers, their data so refer to these as managerial controls.
+
+So, if you are creating a series of policies and procedures.
+
+Administrative controls associated with security design, implementation of security policies and standard operating procedures.
+
+1. Operational controls:
+
+So operational controls are using people to able to set these controls.
+
+example: Security Guard, Awareness programs
+
+1. Physical Controls:
+
+So, this controls limit physical access to a building, room or a device.
+
+Example: Guard Check, Fences, Locks, Badge readers
+
+ Control Types:
+
+1. Preventive: Blocking access to a resource.
+
+Example:
+
+Firewall Rules
+
+Following Security Policy
+
+Guard Shack Checks all identification.
+
+Enabling door locks
+
+1. Deterrent: May not prevent access to a resource but it may give them a discouragement
+
+Examples:
+
+Splash Screens
+
+Threat of demotion
+
+Front reception desks
+
+Posted warning signs.
+
+1. Detective: A detective control type can identify and, in some cases, warn us when there is a breach.
+
+Detective may not prevent access but gives a warning and log info about that attack.
+
+Example:
+
+Collect and review systems logs.
+
+Review login reports.
+
+Regularly patrol the property
+
+Enable motion detectors.
+
+1. Corrective: If there is a notification that someone has breached your system or gained access into a certain area of business then we need to apply a corrective security control.
+
+A corrective security control occurs after an event is detected.
+
+So, this is sometimes may be able to reverse the impact or may be continue operating with min downtime.
+
+Examples:
+
+Restoring from backups can mitigate a ransomware infection.
+Creating policies for reporting security issues
+
+Contact law enforcement to manage criminal activity.
+
+Use a fire extinguisher.
+
+1. Compensating controls:
+
+When there is a security event occurred, and you don’t have the resources or any means to reverse the security event which has occurred then we use Compensating Controls.
+
+Existing controls aren’t sufficient.
+
+this control may be a temporary
+
+This prevents the exploitation of a weakness.
+
+Example:
+
+Firewall Blocks
+
+Separation of duties
+
+Guard Duties
+
+Generator
+
+1. Directive Control Type: Is a weak security control because we are in one way somehow directing to do more secure rather than less secure
+
+Example:
+
+Storing sensitive files in a protective folder
+
+Creating policies and procedures
+
+Train users
+
+Post a sign of Authorized Personnel only.
+
+ CIA Triad:
+
+Confidentiality: 
+
+preventing unauthorized access.
+
+Preventing confidentiality in following ways:
+
+1. Encryption: Encoding messages that only certain people can read it
+2. Access Controls: Restricting access to a resource
+3. Two Factor Authentication: provides more confidentiality
+
+Integrity:
+
+There is no modification of data.
+
+Preventing Integrity in following ways:
+
+1. Hashing: 
+2. Digital Signatures
+3. Certificates
+4. Non-Repudiation
+
+Availability: Information is always available, and all the systems are up every time.
+
+Preventing Availability in following ways:
+
+1. Redundancy: Build services that will always be available
+2. Fault Tolerance: System will continue to run, even when there is a failure occurs.
+3. Patching: gives stability and closes any security holes that are open
+
+ Digital Signature
+
+In digital signature we use a private key that is only known to the person who is sending the data, and no one has the copy of this private key.
+
+Creating Digital Signature:
+
+Encryption:
+First Alice sends a message to Bob.
+
+the message is (You’re hired Bob) which is in plaintext.
+
+so when we click the digital signature then the hashing algorithm creates a hash and then so we need to verify that the message only came from Alice so now we use encryption and  encrypt the hash value with the Alice’s private key and then take this c=encrypted hash and send along with the plaintext.
+
+Decryption:
+
+After receiving the plaintext along with the encrypted hash value then Bob is going to Alice’s public key which is known to all and examine the digital sign and decrypt it using public key of Alice and then after the decryption takes place then now we have the hash that was originally created before an encryption so then bob Manually uses the same hash function on the plain text and then now bob compares the hash value with digital sign and the hash value he manually created then if the hash value matches then now we can verify that the message has come from Alice.
+
+ AAA Framework:
+
+Identification: This is who you claim to be for example: username
+
+Authentication: prove you are who you say you are for example: password
+
+Authorization: based on your authentication and identification what access do you have?
+
+Accounting: Resources used: Login time, Data sent, Logout time
+
+Certificate Authority: This a device or software that is responsible for managing all of the certificates.
+
+All organizations have trusted Certificate Authority (CA) 
+
+The organization creates a certificate for a device and digitally signs the certificate with the organization’s CA.
+
+The certificate now be included on a device as an authentication factor and the CA’s digital sign is used to validate the certificate.
+
+As part of Security Infrastructure, you would have a CA itself has its own certificate that was signed by Root CA
+
+Now we have a laptop in the field and we have previously create device certificate just for this machine and it has been signed by a CA , once we know thar CA certificates and we know the device certificate now we can then compare these two certificate , now the device certificate was signed by our CA certificate.
+
+Zero Trust: Zero Trust means that you have to authenticate or prove yourself each time when you want to access a resource.
+
+Zero Trust is a holistic approach to network security, and it covers every device, every process, every person.
+
+Zero Trust is nothing is trusted by default, and everything is subject to some type of security checks.
+
+Like Multifactor Authentication during your login process, Encrypting the files stored, additional system permissions, additional firewalls, so there are number of different security policies and controls are added to create this Zero Trust environment.
+
+In Zero Trust: Everything must be verified; nothing is inherently trusted.
+
+Zero Trust is divided into functional planes of operation:
+
+Applies to physical, virtual, cloud components.
+
+Zero Trust has 2 different planes of operation:
+
+1. Data Plane: Is the part of device that actually planning the security process and so this might be a switch, router, or firewall so that’s process frames. packets, and network data in real time and the data plane on these devices is forwarding Network Address Translation, Routing processes or anything else that helps move data from one part of the network to other. So, all of this data needs to be controlled and hence we have the control plane which controls all of the data.
+2. Control Plane: This is where we manage all of the actions that are occurring in the data plane and this means we may be configuring policies or rules for devices to determine whether data may be traversing the network or setting up the forward policy and understanding how routing may be configured so any time you are looking at a routing table or you are looking at a firewall rule or how Network Address Translation should be handled and that means you are configuring the control plane.
+
+For Zero Trust we not only implement additional controls, but we need to be lot smarter on how we evaluate those security controls and for example we can implement technology called Adaptive Identity. This is where we are examining the identity of an individual and not based on user is telling.
+us but also the other info we are gathering about the authentication process. For example, we may have to look at the source of the requested resources.
+
+Adaptive Identity: 
+
+Consider the source and the requested resources.
+
+Multiple risk indicators which are related to the organization, physical location, type of connection, IP address etc.
+
+Make the authentication stronger if needed.
+
+Threat Scope Reduction:
+
+Decrease the number of possible entries points.
+
+Policy Driven Access Control:
+
+Combine the adaptive identity with a predefined set of rules.
+
+Another way good way to qualify the identity of a person is understanding where they are connecting from and as broadly, we categorize them as security zones.
+
+Security Zones: So, this allows us to expand from something that is simply a one relationship where a user is logging into a server and instead looks at the overall path of the conversation.
+
+This security zones examine where we are connecting from and where are you going?
+
+Whether it is Untrusted network connecting to a Trusted network , whether it is internal network or external network and also you can create separate VPN connections like VPN1, VPN5, VPN11 also you can create separate groups of your organization like Marketing department, IT, Accounting, Human Resources.
+
+So now this allows you to now start setting rules on what zones has access to all of the other zones. For example, you may have a zone that automatically denies access if someone is coming from untrusted zone to a trusted zone also, we can use this zone to create implicit zones like for example trusted to Internal zone traffic.
+
+So to be able to set these policies and procedures along with this pathway, we need to have something in place that allow us to create an enforcement of these policies and this is our Policy Enforcement point and any subjects or systems that are communicating through this network will be subject to evaluation point by the Policy Enforcement Point. These subjects and systems are commonly end users and the individual processes that are running on a system, or they may be applications that are in use. so, you can think of a policy enforcement point as a gate keeper and traffic traversing the network must pass through the Policy Enforcement point so that we can make decisions on whether we would like to allow or disallow this traffic.
+
+The policy enforcement point doesn’t provide the decision on whether the traffic is allowed or disallowed. Instead, it gathers all of the information about the traffic and provides that to policy decision point is responsible for authentication and making a decision based on whether that should be allowed on the network.
+
+Policy engine examines all of the request that are coming through and evaluates each access decision based on policy and other information sources based on some predefined security policies and whether to grant, deny or revoke.
+
+Policy Administrator: Communicates with the Policy Enforcement Point and generates access tokens or credentials and tells the Policy Enforcement point to allow or disallow access.
+
+ Deception & Disruption
+
+Honeypots: A Honey pot is a way to attract the bad guys to your system.
+
+Honeynets: These Honey Nets may consist of Workstations, Servers, Routes, Switches, Firewalls.
+
+ Building a larger deception network with one or more honeypots.
+
+Honey Files: Attract the attackers with more honey. 
+
+ like creating files with fake info
+
+Example: passwords.txt where there are no passwords in it but still it’s a bait and when attacker opens this file then an alert is sent.
+
+Honeytoken: Adding some traceable data to the honeypot, if the data is stolen, you will know where that info came from.
+
+Example: 
+
+ API Credentials, where this does not provide any actual access, and the notifications are sent when used.
+ Fake Email Addresses: When this is added to the contact list then we can monitor the internet that who exactly posts it.
+ Database Records, Browser Cookies, Web Page Pixels this could be tracked if it happens to be posted somewhere.
+
+ Public key infrastructure:
+
+ It includes policies, procedures, hardware, software, people and PKI is responsible for creating, distributing, managing, storing, revoking Digital Certificates.
+ Also refers to the binding of public keys to people or devices and it’s all about the Certificate Authority and trust.
+
+ Types of Encryptions:
+
+1. Symmetric Encryption: 
+ A single, shared key
+ Can decrypt with the same key.
+ If gets out, then you need another key.
+ Symmetric Key Same shared key is used for both encryption and decryption.
+ Don’t scale very well.
+ Can be challenging to distribute.
+ Symmetric Encryption is very fast as it has very less overhead as compared to Asymmetric Encryption.
+1. Asymmetric Encryption: 
+ Public key cryptography
+ different key is used for both encryption and decryption and these two key that we used for encryption and decryption are mathematically related so in fact we create both of these keys at the same time during the same process.
+ So, one key Private key and which means only one device, or one person has access to it, and these is the second key which is public key, and this key is available to public.
+ So, in Asymmetric Encryption we use the public key to encrypt the data and we use private key to decrypt the data.
+ Even if you have public key, we can’t reverse engineer the public key to get the private key.
+
+Example: 
+
+Bob has a plain text (Hello Alice) and this is encrypted by using Alice Public key and then converted to a cipher text and then and this public key is known to all and now we have an encrypted data so when it is sent to Alice then Alice decrypts the message using his private key to get a plain text(Hello Alice).
+
+ Credit Card Tokenization:
+
+1. First step is registering a credit card number on the phone and when you perform the registration process then it reaches out to remote token service server to register this credit card (4111 1111 1111 1234)
+2. At the time the server is going to provide a series of tokens that will be stored on your local phone and notice that the credit card number is actually a different number when compared to the registered credit card number on the phone (4545 9999 9999 5678)
+3. In most cases we don’t usually see this token at all although you may notice that the receipt is showing a credit card that doesn’t match the actual credit card number. 
+4. Now we have received this token then we are ready to use this phone at checkout and so we go to the store and during the checkout process we use near field communication to transfer the token into the payment system.
+5. So instead of paying with actual credit card number now we are going to pay with the one of the tokens that we have originally received from the token service server and then the merchant sends this token to the token service server and it does the reverse look up to see the actual credit card number that happens to be and now the system knows the actual credit card number and it can check to validate that you have proper funds or credits to be able to perform this transaction and it validates the token and approves the transaction for the merchant and now this token is used, you phone is going to throw the token away and it can no longer be used for any transactions and the next token in the list or new token is used for the next transaction
+
+ Hashes:
+
+ represent data as a short string of text.
+ OneWayTrip: Impossible to recover the original message from the hash digest.
+ Used to store passwords confidentiality.
+ A Digital Signature provides Authentication, Non-Repudiation, and Integrity
+ The hash should be always unique so the different inputs should never create the same hash, if they do then there is a hash collision.
+ MD5 has a hash collision problem.
+
+ Salt: Random data added to a password when hashing
+
+ Every user gets their own random salt, the salt is commonly stored with password.
+ Rainbow tables won’t work with salted hashes.
+ The technique for reverse engineering the hash is called Rainbow Table
+ Rainbow table is precompiled every set input and the series of hashes associated with those inputs.
+
+ Creating a digital signature:
+
+1. Alice likes to send a message to bob and that says, (you’re hired Bob) and initially this message is in plain text format
+2. This plain text is send through the Hashing Algorithm to create a hash of plaintext and then the email application is going to encrypt the hash that has been created by Alice’s private key and since Alice has only access to her private key and then Alice is the only one that has created this final digital signature
+3. So now along with the plain text (you’re hired bob) the digital signature which we created is also sent
+4. We usually include digital signature as an attachment or at the end of the email
+5. Now Bob checks his message that says (you’re hired Bob) and that includes the same digital signature and now bob wants really to verify that the message which is received is the message which is really sent or not and he want confirm whether this message came from Alice
+6. First thing the Bob going to do is load that message into his email client and generally this email client will perform a verification and tell Bob that whether this is verified or not verified
+7. Email client looks at digital sign and decrypt that digital sign using Alice’s public key and remember that keys are mathematically related so if you encrypt with one key then you can decrypt with other key so the result of this decryption will now end as a hash of the original plaintext and now we simply perform the same hash that was originally done to see the difference and if both the hashes match then the digital sign verifies and not only is the doc exactly what that was originally sent and came from Alice.
+
+ Certificate Authority: has digitally signed the web certificate.
+
+ You trust the CA; therefore, you trust the website.
+ CA is responsible for vetting the request.
+ They will confirm the certificate owner.
+
+ Certificate Signing Requests:
+
+1. Let’s say we would like to create a certificate for our web server, and we would like to send that certificate-to-certificate authority to be validated and have them digitally sign it and send back to us.
+2. Let’s first create a digital certificate using our public key and add the identifying info about what server might be connected to and info about our organization and combine those together to create a certificate signing request
+3. Then that certificate signing request is send to a certificate authority now does the validation process and they confirm that the certificate that you are asking for that you are asking for is one that is really a web server that you own and control and if they agree that this is a valid certificate and then they use their private key to digitally sign the certificate and send it back to you
+
+ Certificate Revocation Lists:
+
+ Maintained by Certificate Authority
+
+ This is a list of all the certs that have been revoked and we keep this list on the certificate authority itself.
+
+ OSCP Stapling:
+
+ Online Certificate Status Protocol
+ Most browsers today support OSCP, which means the browser itself can handle all of the checks for revocation when you visit a third-party website.
+
+ Watering Hole Attack:
+
+A watering hole attack is a type of coordinated, largescale cyberattack that targets specific groups of users by infecting websites they commonly visit. The attacker compromises a website, turning it into a “watering hole” that can then spread malware to any visitors, including those from the targeted group.
+
+ Memory Injection:
+
+ one of the most common types of the malware injection is called DLL Injection (Dynamic Link Library Injection)
+
+Race Conditions: When two events happen at nearly the same time within an application and the application doesn’t take into account that these two conditions may be operating simultaneously, and this is something that application developers simultaneously check when building their application.
+
+ The common type of race condition is (TOCTOU) Time of check to time of use attack.
+
+A Month of OS Updates:
+
+ Patch Tuesday 2nd Tuesday of each month the Microsoft gets patches and updates.
+
+ Hardware Vulnerabilities
+
+End of Life (EOL):
+
+⇒ Manufacture stops selling a product.
+
+⇒ May continue supporting the product.
+
+⇒ Important for security patches and updates
+
+End of Service Life (EOSL):
+
+⇒Manufacturer stops selling a product.
+
+⇒ Support is no longer available for the product.
+
+⇒ No ongoing security patches or updates
+
+⇒ May have a premium cost support option.
+⇒ Technology EOSL is a significant concern.
+
+Legacy Platforms: If you work for an organization that has large infrastructure and got data centers and that are located around the word at many different remote sites then you probably have equipment in one of these locations that have been installed for years and years and this called legacy platforms.
+
+⇒ That is legacy platforms and that might run older operating systems and has not been updated in quite some time or middleware that the application uses are outdated. In each of cases the software that’s running on these systems may be at their end of life or even end of service life and that’s the case then we may want to compare the risk of continuing to use this device or application versus the security concerns or risk associated with keeping it on our network.
+
+⇒ The real challenge is that this particular device or software has a very critical part of the overall goals of your organization and this means that it’s not as easy as simply removing or turning off or replacing with another device or elsewhere and this means we may need to keep the device running for certain amount of time, but we might also create some type of mitigation that prevent someone from taking advantage of any known security vulnerabilities and this means we may need to create some additional fire wall rules that would limit people able to directly connect to this device or you might add additional IPS signatures, especially signatures that are built for some of these older operating systems.
+
+ Cloud Specific Vulnerabilities:
+
+Attack the service:
+
+1. Denial of Service
+2. Authentication Bypass
+3. Directory Traversal
+4. Remote Code Execution
+
+Attack the application:
+⇒ Web applications attacks have increased like log4j, and spring code execution is very easy to exploit and there is no need for any knowledge of IT services.
+
+1. Cross site scripting: Take advantage of poor input validation
+2. Out of bound writes: Write to unauthorized memory areas
+3. SQL Injection: Get direct access to a database
+
+Misconfiguration Vulnerabilities:
+
+Mirai Botnet: 
+
+ The botnet that takes advantage of default account names and passwords
+ It has the list of all the default accounts names and passwords for every Internet of things or IOT devices.
+ There are more than 60 default configurations that this will look for on your network including cameras, routers, doorbell, garage door openers and anything else that connects to the network, if botnet finds one of these devices with the default credentials, its able to gain access to the device and then provide the attacker with the info on where they can connect as well.
+ So, this software can be run by anyone as this Mirai Botnet has been released as open-source software.
+
+ Mobile Device Vulnerabilities:
+
+MDM: Mobile Device Manager is the on which enforces security on mobiles.
+
+Sideloading: The ability of installing applications outside the scope of these app stores is sideloading. 
+
+ So, if a user does install their own firmware to be able to root or jailbreak the device then they would probably then be able to sideload any applications they like.
+ AUP: Acceptable Use Policies Acceptable Policies and Procedures of an organization
+
+ Zero Day Attacks:
+
+ An attack without a patch or method of mitigation is called Zero Day Attack
+ A race to exploit the vulnerability or create a patch.
+ Difficult to defend against the unknown
+ CVE: Common Vulnerability Exposures
+
+ An Overview of Malware:
+
+ Malware: Any type of software that is doing bad things to our systems,
+ This may be Gathering Keystrokes and sending back to the attackers etc.
+
+ Malware Types:
+
+1. Viruses
+2. Worms
+3. Ransomware
+4. Trojan Horse
+5. Rootkit
+6. Keylogger
+7. Spyware
+8. Bloatware
+9. Logic Bomb
+
+1. Virus: Malware that can replicate itself from one computer to another computer
+ Virus needs a human intervention: Like clicking a link to start the executable.
+ Replicates through files systems or networks just running a program can spread virus.
+ Viruses may or may not cause any problem, but some viruses are invisible, and they are difficult to find.
+ This is the reason we use Antivirus software.
+ In Antivirus software always pls keep your signature file updated because that’s what the antivirus is using to be able to identify the malicious software.
+
+Types of Viruses:
+
+1. Program Viruses virus that are part of an application
+2. Boot Sector Virus the viruses that sit on the boot sector of your system so when you boot up your computer the virus automatically runs as system is booting
+3. Script Virus: Operating system, Browser and other applications can run scripts, and those scripts can contain the malicious software
+4. Macro Virus: So, if you are using Microsoft word then there are viruses that are written in that macro language that to take advantage of vulnerabilities in that software.
+
+Stealth Attack: 
+
+ There is also type of virus that are stored on our storage systems and doesn’t use any files, and this type of virus is a fileless virus because it’s never writing any software or any malicious code to your storage drives.
+ Doesn’t install as any software on the system and doesn’t require the software to be loaded from storage device, instead Everything related to fileless virus occurs in memory of the system.
+
+Example of fileless virus that is able to first infect your system and then from that point, can install additional malicious software:
+
+ So this usually starts with end user performing some type of function so it might be the user is clicking on a malicious link and that’s inside of an email and that link takes the user to a website and that website is set up to exploit vulnerability that is sitting within your operating system or the application running so the exploits associated with flash, java, windows vulnerability so this windows vulnerability would be a perfect way for this fileless virus to get into your operating system and now the virus is running on your system and now we can run the other viruses as well like PowerShell and then which downloads additional power shell scripts and run those scripts in memory as well and it this point of time the virus can install other applications and scripts and it can now start removing data from your system and even transferring the data to a third party and this virus may add an AutoStart to the registry of the windows operating system so the next time when you start the system this process occurs all over again.
+
+ Worms:
+
+ The malicious software that can run without the human intervention.
+ This malware is able to self-replicate itself between systems without any user intervention.
+ Worm can replicate to every system that is on the network.
+ Self-propagates and spreads quickly.
+ These worms are replicating on the speed of your network.
+ Worms are very bad as they can take over many systems very quickly.
+ Firewalls and IDSIPS can stop worm from propagating itself throughout the network.
+ So, there are some signatures and a process in place to able to stop that traffic from going from one machine to another.
+
+ Spyware:
+
+ Spyware is a malware that is watching everything that happens on the system, it may put advertising on the screen or stealing your personal information or commit a financial fraud.
+ Can trick you into installing fake security software.
+ Capture Browser habits and may send it to attackers.
+ Spyware might also install a key logger, which is watching everything you type and that means the usernames, passwords and everything you type on this system is collected into a file.
+
+ Bloatware:
+
+ If you ever purchased a new computer or a new mobile device and when you turned it on for the first time you will notice that there are a lot of popular apps that has been already installed on that system like your mail etc.
+ Uses valuable storage space that could be allocated to other applications.
+ The system may be running some of this software automatically when it starts up and that could be affecting the overall efficiency of the operating system.
+ And any of these applications could be susceptible to known or unknown vulnerabilities and making this a security concern.
+
+ Keyloggers:
+
+ Attackers know that a great deal of sensitive info is put into your computer using the keyboard, so this is the great way to perform the keylogging and capture every stroke that you’re typing something into your pc.
+ This might include all of the website URLs you visit, and it could be passwords, usernames, email messages and it might be credit card info and other financial details.
+ So, the key logging malware will stay resident on your system and it will capture all of the keystrokes to a file and usually once or more times a day and that file will be sent to the attackers and they have everything that you have typed on the computer
+ Other key Logging functions: Clipboard logging, Screen logging, instant messaging and the search engine queries.
+
+ Logic Bomb:
+
+ A logic bomb waits for a particular event to occur and when that event occurs the bomb explodes.
+ It waits for date and time and when the date and time arrives the system then reboots or erases data or make any changes to that system.
+ So, there is no Antivirus or Antimalware signature associated with that logic bomb as this doesn’t run on any other system as this is created by end user, a particular goal in mind.
+ So, this makes logic bomb very difficult to identify.
+
+ Rootkits:
+
+ The name root in rootkit comes from the Unix superuser.
+ The root kit in general hides in the kernel of the operating system and this makes that rootkit as part of the OS itself.
+ So, it’s very difficult to identify the rootkit using the antimalware software as when the rootkit is running then it runs as part of the operating system.
+ So, we create processes within the UEFI Bios called Secure Boot
+ Unified Extensible Firmware Interface (UEFI) and Basic Input Output System (BIOS) are both firmware that acts as an interface between a computer's hardware and operating system.
+ So secure boot will look for an operating system signature and confirm that nothing has changed with kernel of the operating system before the system is booted.
+
+ Physical Attacks:
+
+ Brute Force: No physical password required, and we can use brute force to be able to force that door open.
+ RFID Cloning: We use RFID very often for access through doors, there are RFIDs for access badges and Key Fobs, so if we are able to clone or duplicate the RFID’s then we may get full access.
+ Environmental Attacks: Perhaps if you cannot attack the system directly then you can attack the environment around the systems and there are many ways you can perform the environmental attacks and one very common environmental attack is simply turning off the power in the data center and also there are HVAC: (Heating, Ventilation, and Air Conditioning ) and humidity controls so if an attacker gain access to the HVAC control system they might decide to turn off the cooling and all of the systems heat up and then they would automatically shut down and in some data centers there are fire suppression systems and someone who gains access to the fire suppression system and they may also able to cause a denial of service
+
+ Denial of Service:
+
+ Force a service to fail overload the service.
+ Take advantage of a design failure or vulnerability Keep systems patched.
+ Cause a system to be unavailable Competitive advantage.
+ Create a smokescreen for some other exploit to hide the DNS Spoofing Attack
+ Simple DOS is turn off the power.
+
+⇒ The attackers do not focus on single system and instead they focus on the bringing down the entire set of servers, they will use multiple devices located all over the world to create a Distributed Denial of service or DDOS.
+
+⇒ The attackers don’t sit any every computer and instead they put malware on these devices and create a series of botnets and these botnets are robot networks that are under the control of the attacker and the attacker can simply tell the botnet in one single command to attack a particular web server
+
+ DDOS Reflection and Amplification:
+
+ So the attackers have found a way that they can send the small amounts of data and that are suddenly amplified into very large amounts of data to cause the denial of service and this process of reflecting and amplifying the amount of traffic being sent over the network is possible because they are taking advantage of internet services that are available to anyone
+ And we can see that this amplification occurs with certain protocols for example when you request info from an NTP server, you generally receive back more info than you requested and the same applies to the other types of very common protocols like DNS, ICMP
+
+ Domain Name Server Attacks:
+
+ So, we reply on our domain name services or our DNS servers to provide us with a conversion between a fully qualified domain name and IP address.
+
+ DNS Poisoning:
+
+ Some of these DNS poisoning attack involves modifying the DNS server itself and the DNS servers are very well protected.
+ Modify the client host file The host file takes precedent over DNS queries (in most cases would be to modify the client computer and they would need to access to this client computer and in most cases, they would need elevated rights to even change this file. This local host file contains a list of fully qualified domain names and IP addresses that you would find on a DNS server but instead of the local machine querying the DNS server for this info, it simply looks for its local host  to see resolution happens to be in that file itself and if it is in the file it uses that resolution instead of making a query to the DNS server
+ And there are certainly way an attacker sits in the middle of conversation, intercept the DNS queries and reply back with the query that would direct the user to a malicious website.
+ Send a fake response to a valid DNS request requires a redirection of the original request or the resulting response.
+ Real time redirection
+ this is an on-path attack.
+
+ Domain Hijacking:
+
+ Another way to access the DNS server is to make configuration changes is to somehow gain access to the entire fully domain name that is fully qualified and is used by that DNS server so if you access the domain name registration wherever it happens to be, you would then be able to control wherever that traffic is going to flow and what IP addresses might be associated with that fully qualified domain name and there are many gain access to this domain registration the simple process because of the security that is put in place at these domain registers and there are ways to gain access to these accounts through traditional means and such as brute force , social engineer the password, gain access to their usernames, emails, passwords that manages the account
+
+ URL Hijacking:
+
+ Another way that an attacker can use to redirect users to a malicious site is by using URL hijacking and this might redirect users to a site that presents advertising and that advertising may create a revenue for the attacker and the attacker may sell misspelled domain name to a legitimate domain name owner
+ If the attacker really wanted to be crafty, they could use that misspelled name to redirect all the traffic form the legitimate site to the competitor of that legitimate site or the attacker may present a page that looks exactly like the legitimate site and it may request you to input your username and password and now the attacker has your login credentials and wants to download malicious software that will either download or create a ransomware for your machine
+
+ Wireless Attacks:
+
+ Let’s say you are on a wireless network browsing the internet and then you are suddenly disconnected from the wireless network and there is no warning and no messages and you simply dropped of the network and now you no longer have access to the internet and the stop and connect to the network again and suddenly you get disconnected to the internet and this process happens again and again and you can stop it
+
+ Wireless DE authentication attack:
+
+ A significant wireless denial of service attack
+ The main vulnerability associated with this de authentication attack is relates to the management frames that are sent and received by the access point.
+
+ 802.11 Management frames:
+
+ 802.11 wireless includes a number of managements features.
+ frames that make everything work and you can never see them.
+ Important for the operation of 802.11 wireless how to find access points and manage QOS, associate disassociate with an access point etc.
+ Original wireless standards did not add protection for management frames and everything which is send via network is not encrypted and in the plain text and there no authentication or validation.
+
+ Radio Frequency (RF Jamming)
+
+ The attackers will send interfering wireless signals to anyone who may be nearby, and the goal is to decrease the signal to noise ratio so that the user is hearing more noise than actual real data from the wireless access point.
+
+ Wireless Jamming:
+
+ There are many different ways for an attacker to cause this type of jamming that this could be a constant amount of info they could send random data across the network or they may send large number of legitimate frames over the wireless network and all of this would cause noise and problems for people who are trying to communicate to this access point
+ The attacker might all send data at random times to make the troubleshooting of this problem a little more difficult and this might be more of a reactive jamming, normally when the network then there is no jam signal to see. But as soon as someone tries to communicate with the access point then the attacker turns up the volume and makes impossible for anyone to communicate on this wireless network.
+
+ On Path Attacks (or) Man in the middle attack:
+
+ An On-path attack allows an attacker to site between two devices and watch all of the traffic that go back and forth those systems.
+ The attacker in the middle of the conversation is responsible for the communication from one device to another device and its passing through the attacker can look at the info being sent between devices and in some cases modify the info that’s being sent in real time as its traversing the network
+
+⇒ One type of on path attack is ARP Poisoning
+
+ ARP Poisoning:
+
+ ARP poisoning generally occurs on the local IP subnet so the attacker would need to be on the same subnet as the attacker because ARP doesn’t have any type of security or encryption associated with it, this is relatively an easy attack to implement.
+ Address resolution protocol that allows us to resolve the MAC address from an IP address
+
+ On path Browser Attack:
+
+ ARP poisoning involved the number of devices all communicating over the same network but what if the attacker could perform this on path attack as the same devices as the victim and this is referred to as on path browser attack.
+ In an on path browser attack or man in the browser attack, malware or trojan on this device is configured as a proxy that is able to redirect before and after it’s sent to the network so it means that even if the network traffic is encrypted then this attack can see all of the info in clear format because it’s running on the same device as victim
+
+ Replay Attack:
+
+ In order to perform this replay attack the attacker has to be able to have info that can be replayed and this can be difficult for the attacker to obtain so some of the techniques that would be to use a physical network tap to watch the traffic, perhaps use ARP poisoning to redirect traffic to the attacker or the attacker may put malware on the victim’s computer to be able to gather info going across the network and once the attacker has these details he can replay this back to the server
+ One from of replay attack is pass the hash, in this context it refers to as Password Hash
+ One way to stop the replay attack is to use encryption and add some added salting of the password so that each time an authentication occurs, it’s using a different salt and therefore a different hash. The servers are configured to not to accept the same hash twice in a row so if the attacker does somehow gain access to the salted hash, then they are not able to use a replay attack to gain access to the server.
+ Another valuable info an attacker wants to retrieve from your device is browser cookies and session ID’s.
+ Cookies: these cookies are simply files that store the info of sites that you visit.
+ Cookies generally contain the username and some other info that is sensitive to the attacker.
+ The info the attacker wants to pull out of this cookie is Session ID and the session id is used by attacker to gain access to a server without needing any login credentials from the victim.
+
+ Session Hijacking:
+
+ Session hijacking or side jacking occurs when a user authenticates initially with a web server and so they provide a session id and that is sent back to the victim computer and if the attacker does gain access to the session id, then the attacker uses this session id for the subsequent sessions to the web server, Every time they use the session id the web server thinks that this is coming from the original victim's computer which now logged in and now the attacker would now have access to everything.
+
+ Header Manipulation:
+
+ The session ID’s and many other details are contained within the headers that are sent back and forth between the systems.
+ The headers could be gathered using some type of packet captures such as Wireshark or kismet.
+ There are also exploits like cross site scripting that can gather info from the client machine and have those details sent back to the attacker.
+ The attacker might also change the headers that they are sending to a victim server and use tools like Tamper, Fire sheep and Scapy.
+
+ Application Attacks:
+
+ Horizontal Privilege Escalation:
+
+ With this type of Horizontal privilege escalation, the attacker isn’t moving to an administrator access and instead the attacker can move from user A access to access that user B would normally have.
+
+⇒ Replay Attack
+
+ In some situations, the replay attack is two different attack types that are used together:
+
+⇒ so, you might use on path attack to gather info from the network and then use replay attack to send the info to the server.
+
+⇒ Cross Site Requests:
+
+ Cross site requests are common and legitimate.
+
+⇒ When a user visit CompTIASecurity.org
+
+⇒ The user browser loads text from the [CompTIAsecurity.org] (http: CompTIAsecurity.org) server.
+
+⇒ User browser loads a video from YouTube.
+
+⇒ User browser loads pictures from social media
+
+⇒ All of this loads into single screen, and from user’s perspective all of the info is coming from one server and when in reality all of the info is being loaded from different servers and this is almost occurs when you visit any website and these info is loaded from different severs but there is no authentication requirement so when this page is loaded on the webserver , even though it includes YouTube, Social Media info , you don’t have to include your YouTube usernames and social media credentials 
+
+So, HTML on [COmpTIASecurity.org] (http: COmpTIASecurity.org) directs requests from your browser and most of these requests are unauthenticated.
+
+⇒ The Client and the Server:
+
+ If we were to look into the code of what’s really running when you visit a website, you will see that it is separated into two different types of code:
+ Some code will run on the webserver itself, and some code will run on the client side and the client side code that runs on your webserver is HTML or JavaScript and this is rendering all of the info of your browser in a way that the website administrator originally authorized
+ There are also processes occurring on the server side or the web server side itself that the browser doesn’t see, and this may be webserver accepting the request from the user and processing that request with HTML and PHP
+ It could be transferring funds from one account to other behind the scenes or posting info onto YouTube and this is the something the server does only on its side and the browser is not involved with any part of the process.
+
+⇒ Cross Site Request Forgery:
+
+ CSRF is also known as one click attack or session riding.
+ Takes advantage of the trust a web application has for the user and the website trusts your browser and requests are made without your consent or your knowledge.
+
+Example: The attacker posts a Facebook status on your account 
+
+ To stop CSRF the application should have anti forgery techniques added and usually a cryptographic token to prevent a forgery.
+
+⇒ Directory Traversal Path traversal:
+
+ Read files from a web server that are outside of the website’s file directory.
+ Users shouldn’t be able to browse the windows folder.
+ Web server software vulnerability Won’t stop users from browsing past the web server root directory.
+ Web application code vulnerability take advantage of badly written code.
+ The. is very indicative of a directory traversal and that is the command that allows to move backwards in one directory in that particular file system.
+
+ Cryptographic Attacks:
+
+⇒ Birthday Attack:
+
+ We refer to this birthday attack as being a hash Collison were.
+ Hash Collison: With two different plain texts and they both result in same hash.
+ This is usually found through a brute force process, which means we need to try every possible plain text and compare it to every resulting hash to see do you ever have any duplicates.
+ One way to prevent attacker from using this method of finding multiple identical hashes is to use a very large hash output size and the larger the hash it will be very difficult to duplicate that specific hash.
+
+Example: 
+
+The MD5(Message Digest 5) hash as hash collisions are seen in the year 1996.
+
+⇒ Downgrade Attack:
+
+ The downgrade attack is an attack type that uses a perfectly secure algorithm, but that’s the implementation of the algorithm that creates the attack.
+ The purpose of downgrade attack is for two devices that are trying to send encrypted data to either use a weaker encryption algorithm or not encrypt any of the data at all.
+ One form of downgrade attack is using.
+ Example: SSL Striping:
+ The SSL Striping is same as a on path attack where you sit in the middle of conversation and because you are able to sit between the conversation, they can send back info to the victim’s browser page. The page they are trying to visit is not encrypted and doesn’t need to request any encrypted form of the page as simply you can send all of the data across the network without any type of encryption and this means the victim will use nonencrypted HTTP rather than secure HTTPS protocol.
+
+ Indicators of Compromise (IOC): An event that shows an intrusion.
+
+⇒ So, these are the indicators:
+
+1. Unusual amount of network activity
+2. Change to file hash values
+3. Irregular international traffic
+4. Changes to DNS data 
+5. Uncommon logic patterns 
+6. Spikes of read requests to certain files
+
+⇒ Account Lockout:
+
+ Credentials are not working It wasn’t you this time.
+ Exceeded login tries Account is automatically locked.
+ Account was administratively disabled this would be a larger concern as this may be a larger plan that the attacker intentionally locks the account then the call the customer support posing as a genuine user trying to reset the password by an attacker.
+ This is another good reason you should have very strong processes and procedures for a password reset to avoid this type of impersonation.
+
+⇒ Concurrent Session Usage:
+
+ By the law of physics, it’s challenging to be at two places at one time.
+ Multiple account logins from multiple locations interactive access from a single user, you don’t have to clone.
+ This can be very difficult to track down Multiple devices and desktops, Automated processes.
+
+⇒ Blocked Content:
+
+ Once an attacker has done all of the hard work of gaining access to the system, they want to make sure that they remain in that system as long as possible.
+ And they also know if you are able to patch this system you would effectively close the vulnerability and perhaps lock them out of this system that they previously had access.
+ This is why you will notice that viruses and malware will tend to disable any type of updates from the antivirus software once that is infected this machine.
+ This means the user would not be able to download any security patches or update any signatures for antivirus, which of course means that the attacker can remain on that system for as long as they need.
+ If you are finding that you are not able to connect to certain security websites or download security patches, that could certainly be an Indicator of compromise.
+
+⇒ Impossible Travel:
+
+ Authentication logs can be telling us about logon and logoff.
+ Login from Omaha, Nebraska, United States The company headquarters
+ Three minutes later, a login from Melbourne, Victoria, Australia There should be an alert or alarm ringing to tell that as there is long distance between two time zones and that would be impossible and that is can indicator of compromise.
+
+⇒ Resource Consumption:
+
+ Every attacker’s action has an equal and opposite reaction watch carefully for significant changes.
+ File transfers use bandwidth an unusual spike at 3:00 am
+ Security system logs show the outgoing transfer IP addresses, timeframes.
+ Often the first real notification of an issue the attacker may have been here for months and there have been breaches and the only notification is that something was a little unusual was one small file transfer occurring at a time and nothing else should be happening.
+
+⇒ Resource Inaccessibility:
+
+ The server is down Not responding.
+ Network Disruption A cover for the actual exploit.
+ Server Outage Result of an exploit gone wrong.
+ Encrypted data A potential ransomware attack begins.
+ Brute Force Attack Locks account access
+
+⇒ Out of Cycle logging:
+
+ In the world of IT we log as much as info we can and very often that logs will be an indicator of compromise and for example it may be out of cycle logging, which means the log or the info contained in that log should not be in that log during that particular time frame.
+ For example, your organization probably has a change control process that manages and updates the security patches, and these security patches are probably installed on a very regular schedule, and everyone knows the time and date of that these security patches are commonly pushed out. But if you happen to see log info showing that patches and applications are being installed at a times when you would not expect them to be there, and this is a case of out of cycle logging.
+ We can see that firewalls tend to record every single traffic flow, and all of the details associated with those traffic flows. This means that we can look at every bit of traffic traversing firewall to understand what was sent at any particular time of the day. And if you are examining fire wall logs and notice that some info is being transferred at an unusual time frame, that be an Indicator of out of cycle logging.
+
+⇒ Missing Logs:
+
+ The attackers also know that there are extensive logs being stored on operating systems, workstations, firewalls, and other devices because of this, attackers will very often delete log information in order to hide the fact that they are in the system.
+ Each time the attacker authenticates, transfers the files, sends data through a firewall or accesses a server, they will most likely be a log associated with those actions.
+1. Authentication Logs
+2. File Access Logs
+3. Firewall Logs
+4. Proxy Logs
+5. Server Logs
+ So this is why it’s a good best practice to not only to create reports based on that log info, but also setup notifications if any of that log info is missing and this would give you some type of indication that there might be a compromise occurring on the network.
+
+⇒ Published Documented:
+
+ A very clearly indication of compromise is when suddenly, your private organizational data is suddenly made available on the internet.
+ It’s very possible for an attacker to gain access to all of your systems, exfiltrate all of the sensitive info, and you have no idea that any of the data was even transferred, and at least not until the data is suddenly appears on the internet and everyone can now view sensitive info that normally would be private.
+ This sometimes done as ransomware and the attackers will embed ransomware in your environment and encrypt all of your data in the system nut before sending all the sensitive info to the attacker server and ask for a ransom for the decryption key and if they don’t send the ransom then the sensitive info will be made publicly accessible.
+
+In order to limit any scope of any type of security event, it may be useful to segment your network into smaller pieces:
+
+ this might be through a physical segmentation, where you are physically separating devices, it might be logical segmentation, we often see network switches with VLANS or virtual segmentation which is very common in cloud based virtual machine architectures.
+ Sometimes we separates this systems to get the best possible performance, especially if it’s a high bandwidth applications we must dedicate single subnet just for this high bandwidth application so that they can run as efficiently as possible and anything that’s done by any other user on the network would not have any effect on the throughput of this app.
+ Sometimes are segmentation being strategic and security is in place:
+
+Example: 
+
+ Rule that says users should not be communicating directly to a data base server and instead they should be communicating through application and the application server should communicate with database server and in this situation there might be a firewall or some type of control list that would limit who might have access to a particular server. And some segmentation is required due to mandate set of policies and procedures.
+ For example, if you are using PCI compliance and that’s a payment card industry, which means you are protecting credit card numbers, you might be required to keep the credit card info separate from any other part of your network.
+ And this is easily can be separated by using ACLs (access control lists)
+ 
+
+⇒ Access Control Lists:
+
+ This is a way to allow or disallow through your network, operating systems and other technologies, so you may have grouping of categories like source IP address and destination IP address, time of day and other detail that you can use to control traffic through a device.
+ This may be based on IP address, where certain IP addresses can access other IP addresses and there may be blocks installed for other ranges of addresses or it may be based on the user if it’s a regular user they might not have access but if it’s a super user then have access.
+
+⇒ Application allow list deny list:
+
+ Many organizations allow to create application allow list and deny list and many organizations will use these lists to ensure only legitimate applications can be used on those system and it will block the use of any other app. This would include blocking of any malicious software such as Trojan horses, malware, Viruses, and others.
+ You generally set a role or policy that would allow or disallow a particular application to run in the operating system. and it follows two polices and they are:
+
+Allow List:
+
+ Allow list is nothing runs unless it is approved, and which means you will have a relatively restricted list.
+
+Deny List:
+
+ Nothing that is on the bad list can be executed on that system that means everything can run except the things that you have specifically written as being unable to run on that system. A good example of deny list is Antivirus or Antimalware that you are already using, which allow everything to work in your system until it identifies know bad virus or malware and it blocks that particular application from working.
+
+ Mitigation Techniques:
+
+⇒ Patching:
+
+ System stability, security fixes
+ Monthly updates and third-party updates
+ Auto updates
+ Emergency out of band updates
+
+⇒ Encryption:
+
+ In windows the file level encryption is done by EFS
+
+EFS: Encrypting File System Select specific file or folder for encrypting the data.
+
+FDE: Full Disk Encryption This will encrypt everything on that storage volume, including the operating system and user files and in windows we can use BitLocker and in MacOS we can use File Vault etc.
+
+ADE: Application Data Encryption managed by the app and stored data is protected
+
+⇒ Many times, these logs are spread across many different systems, so it is useful to have all those log files consolidated back to one central source. Very often we use SEAM to consolidate all of those logs and provide a central source for creating reports and monitoring data.
+
+⇒ SEAM: Security Information and Event Management
+
+⇒Least Privilege:
+
+ If you look around at rights and permissions assigned to user in your company, you may find very few of them with administrator access. That’s because most of the organizations use Lease Privilege.
+ Lease privilege means rights and permissions are associated with the job are limited to the specific job role for that individual. They don’t need additional rights and permissions if their job doesn’t require to have those permissions.
+ The best-case scenario would be that no user runs with administrative permissions, if you need additional rights, you can elevate permissions temporarily and then bring back down to normal permissions when you are done.
+ If malicious software or malware occurred on that particular system, then the access would be limited to only what the user can see. This can limit the scope of attack or a data breach and this could be significant difference between gaining access to the little bit of data and all of the company’s data.
+
+⇒ Configuration Enforcement:
+
+ Another good idea is to enforce the configuration of the systems that are connecting to the network. We commonly do this during the login process and perform posture assessment. This checks your system to see if you are running the latest version of the operating system ad if you have installed the latest patches and if your antivirus is up to date, and checks for other security features as well.
+ And this might check that you are using the latest version of operating system, including all of the most recent patches.
+ This might also check for EDR.
+
+⇒ EDR:( Endpoint Detection and Response version) 
+
+ this makes sures that you are up to date with latest signatures. This might check to see if your local firewall and EDR are configured and turned on properly. It might check for certificate to see if your system that is connecting is really one that is trusted by the organization.
+ If any of those settings is not up to date with the configuration that’s expected, your system may be quarantined into a private VLAN where you can make changes to bring it UpToDate with the latest configurations. Once those changes are made you can try logging again and have the posture assessment complete and if everything worked properly you would now have access to the network.
+
+ Hardening Techniques:
+
+⇒ Encryption
+
+⇒ The Endpoint
+
+⇒ End point detection and response (EDR):
+
+ Detect a threat EDR detects the threat not only by signatures as a detection tool but also it has behavioral analysis, machine learning, process monitoring and lightweight agent on the endpoint.
+ Investigate the threat and also EDR can investigate threat by Root Cause Analysis.
+ Respond to the threat EDR responds to the threat by isolating the system, quarantining the threat, rollback to a previous configuration and also API driven, no user or technician intervention required.
+
+⇒ Host Based Firewall:
+
+ Host based firewall is a software-based firewall that is a personal based firewall that runs on every endpoint.
+ Allow or disallow incoming or outgoing applications traffic and also controlled by application process to view all the data.
+ and identify and block unknown processes and stop malware before it can start to propagate.
+ This all is managed by a central console.
+
+⇒ Host based intrusion prevention system:
+
+ Recognize and block known attacks.
+ Secure OS and application configs, validate incoming service requests.
+ Often this HIPS is built into endpoint protection software.
+
+HIPS identification: It can be based on signatures, heuristics, behavioral and if the HIPS see any kinds of malicious activity since this IPS is on the operating system then it can extend this visibility into the ay the operating system is working. When there is a buffer overflow, registry updates and some files modified to windows folder then this HIPS detects the malicious activity and send an alert and block them. 
+
+⇒ Open Ports and Services:
+
+ So, every open port is a possible entry point for an attacker so pls close everything except the required ports.
+ Control of open ports on server or workstation, you can also install firewall to provide port-based protection.
+ Ideally you can even use next generation firewall to provide much more granularity of not just the port number but the service that is using that port number.
+ Sometimes these ports are open without the knowledge of the end users and when you initially install an operating system or you install additional applications onto that operating system, you could be unknowingly opening ports in that system.
+
+⇒ Default Password Changes
+
+⇒ Removal of unnecessary Software
+
+ Cloud Infrastructures:
+
+ At this point in the evolution of cloud technologies it’s likely that you or your organization has one ore many applications running in the cloud and these could be running as Infrastructure as a service (Aisa), Platform as a service (Paas), Software as a service (SaaS) or one of the many other types of services available in cloud based infrastructures. But in all of these cases still remains who is responsible for all the security for all these different cloud-based systems?
+ Fortunately, if you are working with a cloud-based provider, they are probably going to provide you with matrix of responsibilities. This will clearly show who’s responsible for different aspects of technologies running in the cloud.
+ Not all cloud providers provide the same matrix. There may be differences on the cloud provider that you are using, and you might have a contract with a cloud provider that modifies the default m.
+
+⇒ Hybrid Considerations:
+
+ In some organizations one cloud is not enough. You may have multiple clouds that you are using across different cloud providers. We refer to this as hybrid cloud.
+ And although it adds additional flexibility when you are using different cloud providers, it also includes extra level of complexity when you are needing to manage across those providers.
+ For Example: Most cloud providers don’t talk to each other directly and in fact, there are many of the systems between different cloud providers may work in very different ways. So, you might have to manually configure all of your settings separately for each cloud provider. For example you might have authentication that needs to occur and if you are configuring differently on each provider, you may have a mismatch between one provider and another Or you may be configuring server configurations or firewall settings and all of those need to match between all of these different providers and since they are not connected to each other hence there may be a mismatch between one and the other and also it can be difficult to manage security and other logs between these different providers. Each provider writes a different type of log with different terminology.
+ Each time this data is sent from one cloud provider to another provider then it’s traversing the public internet. SO, you have to make sure that all of your security settings are configured to protect the data in transit.
+
+⇒ Third party cloud vendors:
+
+ When working with the cloud you are most likely working with a cloud provider but there are also third parties for applications and other cloud-based devices that you also have to manage. For example, you might have an application you have written in house, and you have posted that application to the cloud but would like to a firewall in front of that application to provide additional security. You are most likely using a firewall from a third party to provide the security.
+ The best practice to have a vendor risk management policy so that you can maintain and manage the security for these third-party technologies.
+ And also, we have thought about how we will handle incident response for all of these third-party products and technologies. We certainly have our own internal processes, and we have processes that are associated with the cloud provider. But we also have to bring in all of these other third parties to participate in this incident response process.
+ And of course, we need to constantly monitor these third-party processes and devices. and we have to make sure that the security of the system and the availability is always working as expected for these cloud-based systems.
+
+⇒ Cloud Infrastructure as Code:
+
+ Cloud based infrastructures almost always require some type of infrastructure as code. But you are defining as code rather than defining it as a particular piece of hardware.
+
+For example: 
+
+ Your infrastructure as code may define what hosts need to be built, the types of web servers that are running on these hosts and the database servers that would also be used for this infrastructure.
+ This allows you to easily build out an infrastructure. And it also allows you to easily modify the infrastructure so that you can change the configuration as needed. You can build this out in the code itself. The next time this code is used to build the infrastructure it takes all of your changes into account. Now that you have created a perfect version of the application instance, you can easily use that code to rebuild the instance on any cloud provider at any time. This is one of the significant benefits of cloud computing is that you are able to create an entire infrastructure all based around one single definition of infrastructure as code.
+
+⇒ Serverless Architecture:
+
+ Function as a Service (FaaS)
+ Instead of simply accessing a single application, we are instead accessing individual functions that are handled by that application. Each function handles a small piece of the application. Any time we need to perform one of these functions we address that part of the serverless architecture AND each one of these smaller application functions can run in whatever operating system happens to be appropriate at that particular time.
+
+⇒ Microservices and APIs
+
+ Cloud Infrastructure allows us to have extremely efficient application instances. Traditionally we have used monolithic applications running on the desktops. We would install large applications onto our storage drives. We run all of those applications in the memory of your system and that one big application handles all functions you need for that app.
+ The applications contain all decision-making processes:
+ User Interfaces
+ Business Logic
+ Data Input and Output
+ All these occurs on the client of that monolithic architecture. This also means that you have a large application that needs to be installed on one local machine. And if that app needs to be updated, we need to process a change control. We need to send changes down to that particular device. It needs to be installed on that machine, then we are able to use newest version.
+ In cloud we have opportunity to use more streamlined process that focuses on a microservice architecture, and we are able to take advantage of microservices by using APIs.
+ These APIs are Application Programming Interfaces, and it allows us to programmatically control the way that an application is working. So instead of having one single executable that handles everything for an application, you can break out individual services for the application and run them separate instances in the cloud.
+ All you need to do is Client should talk to the API gateway, which would then send the request to the appropriate microservice. This greatly extends the scalability of the app. If there is a certain portion of the app that is used more than other than you can roll out additional microservices to handle that load. This also makes it more resilient and if you happen to lose a particular microservice the rest of the app will continue to work.
+
+ Networking Infrastructure Concepts:
+
+ But there are technologies built into your switches that allow for segmentation but still have everyone connected to the same physical switch. This is using VLANS.
+
+⇒ VLANS: Virtual Local Area Networks:
+
+ So, this VLANS will allow you to configure certain interfaces on your switches as belonging to one VLAN and other interfaces on the switch as belonging to other VLAN.
+ So VLANs cannot communicate to each other directly so this has the same effect as having two separate physical switches and this would obviously simplify the network design, and you would need fewer switches to accomplish the same amount of segmentation.
+
+⇒ When we think about switching and routing, we often consider the physical aspects of those devices. There is an interface we would connect to and there is a power connection, and we would send info through those devices to be able to forward traffic from one device to another. But inside those devices, there are different operations that occur all at the same time. We refer to those as planes of operation and the perspective of SDN: (Software Defined Networking)
+
+ There are three separate planes that we need to focus.
+1. Data Plane
+2. Control Plane
+3. Management Planes
+ This allows us to break these devices apart into their individual functions and when you do that, you can begin coding that as software. This is a way to take the physical world, turn into software and it can then be used in our cloud-based world.
+
+⇒ The infrastructure layer Data Plane:
+
+ Is the part of the device doing the hard work?
+ The forwarding traffic from one device to another and this process of forwarding takes place in Data Plane and also the Network Address Translation occurs, encryption or trucking or anything else related to the networking part of forwarding data.
+
+ ⇒ Control layer Control Plane:
+
+ All of this data that’s being transferred from one device to another device is managed by the control plane.
+ The control plane is responsible for managing routing tables, session tables, NAT tables and also dynamic updates to routing protocols takes place here.
+
+⇒ Application Layer Management Plane:
+
+ So all the configuration changes like when you are connecting to a switch at the command line through ssh and you are making configuration changes and all of those changes are occurring in the management plane and then those changes will dictate how the control plane manages its session tables and routing tables and ultimately that determines how the data plane is going to forward traffic.
+
+⇒ Other Infrastructure Concepts:
+
+ Cloud based security is centralized and cost less.
+
+→ No dedicated hardware and no data center to source
+
+→ A third party handles everything 
+
+ On premises puts the security burden on the client
+
+→ Data center security and infrastructure costs
+
+Decentralized: 
+
+ Decentralized means Many locations, cloud providers, operating systems etc.
+
+Centralized:
+
+ Centralized means there is a consolidated management view of all of their systems from one single console and this allows ongoing monitoring of every user, every device, every application and everything else that is important to monitor from a security perspective.
+ You get consolidated alerts, consolidated log file analysis, System status and maintenance and patching updates come to single console.
+
+Virtualization:
+
+ Virtualization means running many different Operating Systems on the same hardware.
+ Each app instance has its own Operating System.
+
+Containerization:
+
+ Containerization means multiple operating systems we will run on single application like docker.
+
+SCADA ICS: Supervisory Control and Data Acquisition System or Industrial Control System
+
+ SCADA is a computerbased system for gathering and analyzing Realtime data to monitor and control industrial processes, equipment, and conditions.
+ It enables operators to remotely supervise and manage complex industrial systems, such as power grids, water treatment plants, transportation systems, and manufacturing facilities.
+
+RTOS Real Time Operating Systems
+
+An RTOS is used in applications where timing is critical, such as defense systems (e.g., RADAR), air traffic control, multimedia systems, medical devices (e.g., pacemakers), and stock trading applications.
+
+Embedded Systems: 
+
+An embedded system is one where the hardware and software is created as oneself contained and purpose-built device.
+
+ Infrastructure Considerations:
+
+Resilience: Cyber resilience is a critical aspect of cybersecurity, enabling organizations to prepare for, respond to, and recover from cyber-attacks and disruptions. It involves a combination of proactive measures, such as anticipation and adaptation, as well as reactive capabilities.
+
+⇒ One good measurement of resilience is MTTR.
+
+MTTR: Mean Time to Repair
+
+This describes the length of time that it would take to replace something that is no longer available with components that are available.
+
+⇒ Cost value can be calculated by: 
+
+1. Initial Installation
+2. Ongoing Maintenance
+3. Replacement or repair costs 
+4. Tax implications
+
+Compute:
+
+ In today’s cloud-based environments, we tend to take the resources for an app instance and break them into their smallest components. And one of the components that is going to provide the heavy lifting and processing is the compute component.
+ In cloud this is called a compute engine, and this is the part of the entire process that does the actual thinking and processing of data.
+
+ Secure Infrastructures:
+
+Firewalls:
+
+ Separate trusted from untrusted zones and also provide additional security checks.
+ And the other services may require their own security technologies like Honeypots, Jump Server, Load Balancers, Sensors
+
+Attack Surface
+
+ In our network an attacker can get in many ways, and they are.
+1. Application Code
+2. Open ports
+3. Authentication Process
+4. Human Error
+ We can minimize the attack surface by
+1. Audit the code
+2. Block ports on the firewall
+3. Monitor network traffic in real time
+
+Connectivity:
+
+ Secure Network Cabling protect the physical drops.
+ Application-level Encryption
+ Network level Encryption: for our remote sites people connecting from offsite, we may want to include additional encryption for those links and it’s not unusual to build IPsec tunnels from site to site and VPN concentrator to anyone outside the office can securely connect to the network.
+
+ Intrusion Prevention Systems:
+
+ IPS watch the network traffic and if there is any malicious or any exploit then it will block immediately, and these intrusions can be seen in known vulnerabilities like:
+ In Intrusion Detection System IDS just alarm or alert when there is an exploit in the network
+ But Intrusion Prevention System will stop it before it gets into the network.
+1. Exploits against operating systems, applications etc. and vulnerabilities like Buffer overflows, cross site scripting and other vulnerabilities.
+
+⇒ One of the challenges with security devices that sit in line to monitor traffic going by is that those devices can occasionally fail. They might lose power, there might be a hardware problem, or there might be a bug in the software and then the system crashes.
+
+Failure Modes:
+
+ If this device has been configured as fail open when there is a crash, or it becomes unavailable then the data will continue to flow through the connection.
+
+⇒ Fail Open: When a system fails, data continues to flow. 
+
+⇒ Fail Closed: When a system fails, data will stop flowing. 
+
+Device Connections:
+
+⇒ Active Monitoring:
+
+ In active monitoring the system is connected inline
+ There is an internet connection, a firewall, there is a core switch and between the firewall and switch there is a IPS put inline doing active monitoring. As traffic traverses this link between the core switch and the firewall, the IPS is examining all of the traffic, making a decision on whether the traffic is legitimate or the traffic is malicious, that can block that traffic in the IPS itself and because IPS is designed to block traffic in real time, an active monitoring  configuration is often the default config. But there may be reasons that your organization is uncomfortable with an actively monitoring system. There may be a concern that an outage would cause downtime for the rest of the network nor may be concerned would be blocking the legitimate traffic instead of malicious traffic.
+ In that case the organization is more comfortable towards the passive monitoring solution.
+
+Passive Monitoring:
+
+ with passive monitoring devices can communicate to each other normally through a switch and the switch is taking the copy of that traffic and sending it to the IPS. Since the IPS is not in line with the normal network communication between the devices and switch, it can cause downtime to the network. But because it is not inline, and it is also having limited capabilities for blocking traffic we often refer to this as an IDS design even though we are using an IPS because the IPS is not inline and it is not able to block the traffic at real time.
+ A passive monitor requires that you have some type of method for receiving a copy of the traffic and this might build into the switch and called a port mirror or SPAN: Switch Port Analyzer or you might use a physical network tap to break into a physical connection.
+ With passive monitoring any traffic sent into the switch will be duplicated and one copy will be sent on its way to the destination and another copy will be sent to the IPs for evaluation
+
+Network Appliances:
+
+ if you are on the inside of a private or internal network, it is relatively easy to connect and manage devices that may be also on the inside of that network. But what if you need to manage these devices and you are on the outside of the network. In that case you are able to take advantage of Jump Server.
+
+Jump Server:
+
+ A jump server is a device on the inside of your network that is accessible from the outside, it is usually hardened, and it has security associated with it and to limit access to only those individuals who are authorized. This means that usually it’s a twostep process. The external client will connect first to the jump server and the jump server and they might SSH to a web server to make changes to the configuration.
+ From security perspective this jump server is an important device to be sure that it is properly hardened and properly secured. You would not want unauthorized access to the jump server from someone who is outside of your network because then they can potentially gain access to the devices on the inside.
+
+⇒ Another useful appliance is a proxy server:
+
+Proxy Server:
+
+ The proxy server is designed to sit in the middle of a conversation between two devices and make requests on behalf of one of those users. This is commonly seen with users that might be on the inside of the network. and they want to communicate with the device that’s on the internet.
+ Instead of communicating directly to those devices on the internet, your internal devices will communicate to the proxy server and the proxy server will make the request to the internet and the response is then sent back to the proxy server, which can then evaluate that response and confirm that the info in the response is not malicious, and then send a response down to the original requester.
+ There are many different uses for proxy, and this could simply be for caching. The first person who makes the request to the proxy server has all of the info cached inside, which means the second person that is making the same request can simply receive the same response as the first request. This saves the great deal of time because you are not sending those subsequent requests out to those devices that are on the internet. These proxies can also perform URL filtering so they will limit what websites you are able to visit. and also provide content scanning and this can be analyzed to see if there might be malicious traffic or some type of exploit and if it is, it can be blocked at the proxy.
+ You generally see two types of proxy in use:
+
+⇒ One is the proxy that needs to be configured in the application or OS that you are using, and this type of proxy is called explicit proxy. Because you are explicitly naming the IP address or name of the proxy that you are communicating with.
+
+⇒ Another type of proxy is Transparent Proxy:
+
+ From the end user’s perspective, they have no idea the proxy is even in place. The proxy is able to sit in the middle of the conversation and automatically make requests on a user’s behalf without configuring anything else in the OS. Since users have no idea that the proxy is in place, so we refer to that as a transparent proxy.
+
+⇒ There are many different types of proxies you might use.
+
+ A proxy you might use every day is a very simple proxy called NAT (Network Address Translation), which will convert between internal and external IP addresses on internet facing routers.
+ Most proxies use are application proxies The proxy that understands the way application works.
+ A proxy may only know one application HTTP.
+ many proxies are multipurpose proxies, and they can be HTTP, HTTPS, FTP etc.
+
+Forward Proxy:
+
+ If you are using a proxy inside of your network to control outbound traffic to the internet, then you are using a forward proxy. Sometimes you call this as internal proxy.
+ With a forward proxy, you users make requests to an internal proxy that is inside of your network and that proxy makes the requests out to the internet to the website. And the website replies back to the proxy which then examines the traffic and if everything looks legitimate, it will send the response down to the user.
+
+Reverse Proxy:
+
+ Reverse proxies provide similar type of function, but for inbound traffic for a specific service. For example, there might be users on the internet that would like to communicate to a web server that is inside of your network. Instead of having the users communicate directly to the web server, they connect to a proxy server. Then the proxy server then makes requests on the user’s behalf and those responses are then sent from web server to the proxy server which then send that response to the user on the internet. It provides additional security and if there is any type of malicious traffic inbound it can be dropped at the proxy rather than sent to the web server and this proxy can also act as a caching server for identical requests coming from the internet. The first request coming from the proxy will be handled by the proxy and it will be forwarded to the web server for its response. and the response back to the proxy is saved in a local cache. All subsequent identical requests from the internet are then sent of course to a proxy server but instead of sending that request again to the web server, we simply pull from the cache and then send the response directly from the proxy. This provides a much faster response time for the end users, and it limits the amount of load that’s being sent to the web server.
+
+Open Proxy:
+
+ From a security perspective this is a significant concern because this is a proxy that is simply available for anyone on the internet to be able to use.
+ This is commonly used to circumvent existing security controls and instead of your device talking to a proxy or a firewall inside of your network, this info is directly sent to an external proxy, which then makes the request for you to another internet site.
+ There are significant concerns when working with open proxy as this proxy is managed by some third party, but we have no idea who that might be and that third party could add additional information into these traffic flows that are going back and forth. The proxy owner could be adding advertisements into the messages being sent back and forth, or they might include malicious code that would infect the devices on your network.
+
+Load Balancer:
+
+ Load balancer will take a load coming from one direction and distribute that load across multiple services.
+ You often see load balancers in large scale implementations. You might have a group of web servers, or farm of data base servers and having a load balancer in place maintains efficiency and keeps the load even across all of those devices.
+ Another nice feature of load balancer is Fault tolerance.
+
+Fault tolerance:
+
+ If a server connected to a load balancer was to fail, the load balancer would recognize that server is no longer is communicating and would split the load among the remaining servers.
+
+Active Load Balancing:
+
+ Configurable load Manage across servers.
+ TCP Offload Protocol overhead
+ SSL offload Encryption Decryption
+ Caching Fast response
+ Prioritization QOS
+ Content Switching Application centric balancing.
+
+Active Passive load balancing:
+
+ Some servers are active, and others are on standby.
+ If an active server fails, the passive server takes its place.
+
+Sensors and Collectors:
+
+ Aggregate info from network device is built in these sensors and separate device and also integrated into switches, routers, servers, firewalls etc.
+
+Sensors:
+
+ IPS, firewall logs, authentication logs, web server access logs, database transaction logs, email logs
+
+Collectors:
+
+ Proprietary consoles (IPS, firewall), SIEM consoles, syslog servers
+ many SIEMs include a correlation engine to compare diverse sensor data.
+
+ Port Security:
+
+ Port security is not limited only to wireless networks but also port security is used for traditional switches.
+
+⇒ The protocol that allows this port security to operate is called EAP.
+
+EAP: Extensible Authentication Protocol
+
+ So, EAP is a framework for authentication that can be applied for many different types of networks and connections.
+ The most common integration of EAP is 802.1X
+
+802.1 X:
+
+ This is an IEEE standard that manages the authentication process for users and devices onto your network.
+ Sometimes you will hear 802.1 X referred to as (NAC)and that means Port based Network Access Control
+ If you were to plug into an available interface that’s on a switch, you would not be able to access the network that’s on that switch until you are authenticated using 802.1x
+ EAP and 802.1X work together so that you can provide login credentials and then have these credentials provide you with access to the network.
+ You often see this 802.1X in conjunction with other types of authentication protocols or databases such as RADIUS, LDAP, TACACS+, Kerberos etc.
+
+IEEE 802.1X and EAP:
+
+ involves 3 components and one of the component is the end user or client and we refer to that device as supplicant and there is usually a switch or access point that you like to gain access to, we refer to this as authenticator and there is a backend database that contains all of these login credentials. This might be an existing active directory database that you can access with Kerberos or LDAP, or we have a RADIUS or TACAS+ database and we refer to this as the authentication server.
+
+Process:
+
+ When supplicant first connects through the network, there is no authentication, and the authenticator will not access to the network until the authentication is complete. Once the authenticator sees these initializations then it sends a message back to the supplicant asking for login credentials. We refer to this request from an Authenticator as EAP request. Then the supplicant provides EAP response with the name of the device trying to access the network. Then that request is passed from the authenticator to the authentication server. If authentication server is accepting logins, then it will send a request back to the authenticator asking for additional details that can be used for authentication. The authenticator sends a request back to the supplicant and the supplicant provides the credentials required to logion to this network and the final step will be to confirm that these login credentials are correct and send those details to the authentication server and if the username and password and other login credentials then the authentication replies with successful login. And tell that authenticator to allow the user access that network.
+
+ Firewall Types:
+
+Firewall:
+
+ Firewall is used to control the traffic in and out.
+ Firewalls may also be used for controlling what websites or content a person may access.
+ Firewalls provide additional security like protection against Antivirus and Antimalware.
+
+Network Based Firewall:
+
+ Firewall filter traffic by port number or application.
+ Traditional based firewalls can control traffic based on OSI layer 4 so that would be a TCP or UDP port number and more modern Next Generation Firewalls are able to manage traffic based on OSI layer 7 and this is the application layer. SO, they are able to allow disallow based on what application is being used over the network.
+ Firewalls can also do more than allow disallow traffic flows that they can integrate other services inside of the firewall such as a VPN.
+ Many firewalls can operate as Layer 3 device, or a router and these devices commonly sit on the edge of the network and control the traffic flows between the internal network and external network. Because they are providing layer 3 functionality, they very often can provide NAT and other types of protocols.
+
+⇒ Some older firewalls include a number of different features that are bundled within one single device. We refer to these older devices as UTM.
+
+UTM: Unified Threat Management device
+
+ Sometimes UTM is referred to as a web security gateway or an all-in-one security appliance.
+
+UTM’s provide. 
+
+1. URL filtering or Content Inspection can allow or disallow access to certain websites
+2. These UTM’s might also have some capability for identifying malware and block it before it gets into your network.  
+3. Many UTM’s can also be used to filter spam
+4. These devices might also provide additional functionality for wide area network connectivity such as CSUDSU or routing or switching is built into itself
+5. Firewalls also block malicious software through the use of an IDSIPS
+6. Since all of the traffic is flowing through the single device, we can use this as a bandwidth shaper to provide QOS.
+7. In many cases these UTM’s can act a VPN endpoint or VPN concentrator
+
+⇒ One of the challenges with UTM’s is however, is that many of these devices only operate at layer 4 so they only look at port numbers and all of these individuals and separate capabilities within one single appliance often provide a drawback to performance. SO, you may have to only turn on few of these capabilities before the entire device tends to slow down.
+
+Next generation Firewall (NGFW):
+
+ NGFW operates on OSI layer 7, so they are able to make forwarding decisions based on the applications that are being used on the network.
+ Sometimes this NGFW are called as Application layer gateway or stateful multilayer inspection or deep packet inspection.
+ A NGFW is able to examine all traffic that traversing the network and perform a full packet decode of everything traversing those links.
+ That means NGFW can recognize who is sending the traffic and where the traffic is going to, what is contained within the application layer of the traffic and then make forwarding decisions on whether that traffic is allowed or disallowed through the firewall.
+ NGFW are able to examine all of this traffic, determine what applications are in use and then make forwarding decisions based on those applications.
+ NGFW might allow Microsoft SQL traffic to go through the firewall regardless of what port number it is using and may be people are allowed to view twitter but not to post to twitter and then you can allow or restrict anyone from viewing you tube videos. It’s possible that all of these three applications are using similar port numbers. But since the NGFW looks at the application layer, it doesn’t necessarily rely only on port number to make forwarding decisions.
+ It is also common that these NGFW to have list of known vulnerabilities that can allow or block in the firewall itself. and turning the NGFW into an IPS.
+ Many NGFW will include a categorization of URLs so you can allow or block traffic to a specific website or a specific URL itself. This means you can configure a rule inside of your NextGen firewall that prohibit anyone inside of your network from accessing a malicious or blocked URL.
+
+Web Application Firewall:
+
+ WAFs are designed to analyze input into web-based applications and either allow or disallow that traffic based on what the input happens to be.
+ This is very common for web-based conversations using HTPP or HTTPS.
+
+For example:
+
+ A WAF can identify SQL Injections within a traffic flow and block that from reaching the application server.
+ So, it’s not unusual to see that NGF is used a alongside a WAF, both of those firewalls are looking at different traffic and making different forwarding decisions.
+ Sometimes we are mandated to have a WAF as part of directive to keep our networks safe.
+
+For example:
+
+ The PCIDSS focuses on providing the WAFs to be able to better protect these credit card-based apps.
+
+Secure Communications:
+
+VPN:
+
+ A VPN encrypts all of your private data and sends it across a public network such as internet. This is often managed with a VPN Concentrator.
+
+VPN Concentrator: 
+
+ The purpose-built device designed to be the endpoint for everyone to connect to using this encrypted link.
+
+SSL TLS VPN: (Secure Socket layer Transport Layer Security)
+
+ SSL TLS VPN runs over port number 443.
+ SSL VPNs are used for remote access communication from a single device, this is usually a VPN client that’s installed onto a workstation or is included as part of OS.
+
+Example:
+
+ An SSL VPN is the type of VPN that you would commonly use to communicate from a laptop over a public network like the internet to a VPN concentrator. That VPN concentrator would then decrypt the traffic and then send it into our corporate network.
+
+Site to Site IPSEC VPNs:
+
+ Some organizations will build an encrypted tunnel between remote locations so everyone at a remote site will be able to communicate back to the corporate network over an encrypted channel that is provided automatically through firewalls acting as VPN concentrators. In this scenario it’s the firewalls that act as the VPN endpoints. So, you don’t need any additional software or config on any of the devices on either side. You simply send traffic normally to the remote site and in between the encryption process occurs automatically.
+ You will often hear of SSL VPNS referred to as remote access VPNs and these types of IPsec VPNs as Site-Site VPNs.
+
+SDWAN: Software Defined Networking in a wide area network
+
+ This SDWAN is specifically designed for some of the challenges we have with connecting to cloud-based apps.
+
+SASE:( Secure Access Service Edge)
+
+ You can think SASE as the Next Generation VPN that allows us much more efficient ways to communicate to these web-based apps.
+ Along with the apps now all of our security technologies will be implemented in the cloud, and they are generally going to be next to the services that we are planning to use.
+ We could then install SASE clouds on all our devices, so we are able to communicate into the cloud and securely and protect all of the data traversing our networks.
+
+ Data Types and Classifications:
+
+Data Types:
+
+1. Regulated Data:
+ This means third party app sets the rules on how that data should be protected.
+ You also need to concern about gov laws and regulations, which may dictate on how data can be stored and for how long.
+
+Trade Secret:
+
+ Another type of data to be secured is Trade Secret and that are owned by your organization and every organization has their own set of secrets and processes that are only known to the organization.
+
+Intellectual Property:
+
+ Other people are able to see, but we protect that data in different ways. For example, it’s very common to protect intellectual property using copyrights and trademarks.
+
+Proprietary Data:
+
+ Any info that an organization owns or info that they have gathered and created into their own set of trade secrets is called proprietary data.
+ That means this data is only used by that particular organization. And this data is unique to that organization and would not commonly find outside of the company.
+
+PPI: Personally, Identifiable Information
+
+Example: Name, date of Birth etc.
+
+PHI: Protected Health Information
+
+Example: Health care records, payments of health care etc.
+
+Sensitive: Intellectual Property, PII, PHI
+
+Confidential: very sensitive, must be approved to view
+
+Public Unclassified: No restrictions on viewing data
+
+Private Classified Restricted: Restricted access, May require NDA.
+
+Critical: Data should always be available
+
+ States of Data:
+
+Data at rest:
+
+ The first state of data that we will look at is the data that is stored on a storage device. this would be a hard drive, an SSD, a flash drive or anything else you have that store data is called Data at Rest.
+ Even if the data is not encrypted it is called data at rest. Off course if you are saving data on one of these storage devices, you may want to include some level of encryption.
+ This could be Full Disk Encryption: Where everything on the storage device is encrypted.
+ May be only encrypting certain bits of data that you are storing on the database and off course your OS can also provide a way to encrypt individual files or entire folders.
+ Now that the data at rest is stored on these devices, we can now then apply different rights and permissions to limit who might have access to the data at rest.
+
+Data at transit:
+
+ If you are transferring info across the network, we refer to that data as Data at Transit.
+ Sometimes also called data in motion.
+ If the data is not encrypted as it’s traversing the network, then there is relatively less to protect it from somebody tapping into that network link. and being able to see the data inside.
+ So, as it goes through switches, routers, firewalls, and other devices and you want to make sure that you are either providing the proper level of encryption or using other types of security.
+ One way to protect this data in transit that is going across your network is using a firewall or IPS, this will allow you to set traffic to pass through but prevents anything that may be unknown or unusual from traversing the network.
+ If you want to add additional security for this data in transit we can take advantage of some encryption technologies, one of these might be TLS that we use to encrypt info that is going back and forth to the web server.
+ If you are going to encrypt all the traffic sending across the network, you, might use a VPN, like a Site-Site VPN taking advantage of IPsec.
+
+Data In Use:
+
+ When the data is in the memory of your system, or it’s being actively processed inside of your CPU we refer to that as data in use.
+ If you were to look at data that is inside of your RAM or CPU, it is always decrypted or in a nonencrypted form. Because we need to able to see the data to perform operations on that data.
+ That’s why attackers like to go after data in use because they know if it is in RAM, it’s probably in an easily readable format.
+
+Data Sovereignty:
+
+ If your organization stores data anywhere in the world, then you have probably run across the issue of data sovereignty. Data sovereignty refers to the information that you are storing inside of a county and therefore all of all of the laws and rules would apply to that data in that country.
+ You also have to consider any laws that may dictate where the data itself should be stored.
+
+For Example:
+
+The GDPR (General Data Protection Regulation) is a European union regulation and dictates that any data that you are collecting on EU citizens must also be stored in EU.
+
+Geolocation:
+
+ Geolocation involves a number of different technologies to determine where someone may be located. For example, it can use GPS, but it can also take advantage of 802.11 info and details.
+ Limit access based on county they are travelling. example: accessing tv channels from other country you may get message that you are prohibited because you are not located in that country.
+ Limit admin tasks unless they are in a secured area permit enhanced access when inside the building.
+
+ Protecting Data:
+
+1. Encryption:
+2. Hashing
+3. Obfuscation:
+ This is the process that takes something that is perfectly understandable and turn it into something that’s very difficult to humans to recognize.
+
+Example:
+
+ The developer can write something that is code, and which is easy to follow and understand but some developers will run that code through an obfuscation process and then give you the obfuscated code. This helps them protect their code base but still allows them to work with the original code. Both the original code and Obfuscated code work exactly the same way. It’s just one is much easier to read than the other. You might also see attackers use obfuscation to hide exactly what’s going on within some malicious code.
+
+Data Masking: 
+
+ Masking takes some original data and hide some of the data to help protect it.
+ Used for protecting PII and financial info.
+
+Example:
+
+ A receipt where you have paid for something with a credit card, you will notice that it has a bank card on the receipt, it may only show the last four digits of that bank card. Instead, the rest of the card is now hidden or masked in many cases with asterisks.
+
+Tokenization:
+
+ Tokenization takes sensitive info and replaces that info with a token.
+ Replaces a sensitive data with a non-sensitive placeholder.
+
+Example: 
+
+ SSN, when you are paying something in person using your phone or smart watch then you are using tokenization for the credit card number.
+ This sends a temporary token during the payment process instead of transmitting your actual credit card number and that token is a onetime use token.
+
+Segmentation:
+
+ Instead of having all of your data in one large database, you might want to consider using segmentation. This will separate the data into smaller pieces and put it into different locations. This will now make it much harder for an attacker because they would need to breach each individual database to gain access to all of the data.
+ This might also allow you to set different security for these different databases depending on the information that is contained within.
+
+For Example,
+
+ If the database, simply contains someone’s name you could put min amount of security for that particular database but if the database contains health care info or financial details then you need to include additional security checks to protect that database from any attacker.
+
+Permission Restrictions:
+
+ Control access to the account and its more than just username and password.
+ Determine what policies are best for the organization!
+ Employing the authentication process like password policies, Authentication factor policies and other considerations
+ Permissions after login Another line of defense and prevent unauthorized access.
+
+For Example: 
+
+ There are groups or file permission that limit the type of data, that particular user has once they login.
+
+ Resiliency:
+
+Resilience in cybersecurity refers to an organization’s ability to anticipate, withstand, recover from, and adapt to adverse conditions, stresses, attacks, or compromises on systems that use or are enabled by cyber resources.
+
+ If you work in Information Security, then you are very focused on maintaining the uptime and availability of systems.
+ One way to provide that resiliency is through the use of High Availability.
+ More enhanced availability is provided by using HA and which is high availability.
+ In HA everything would be up and running and always turned on and always available.
+ Higher availability almost always means higher costs.
+
+Server Clustering:
+
+⇒ Another way to provide this resiliency is by server clustering.
+
+ Combining two or more servers is called server clustering.
+ Easily increase scalability and availability by adding more servers to the cluster.
+
+Load Balancing:
+
+ Load Balancing uses one central load balancer to be able to distribute the load between individual servers.
+ Unlike the server clustering where each individual server in the cluster knows of all of the other servers in the cluster, load balancing works very differently as each of the servers has no idea that the other server even exists.
+ Load balancer acts as central point that manages what devices receive what requests. So, it will distribute the load across all of the individual multiple devices. This device could be running the same OS, or different OS doesn’t matter as load balancer is the one that is maintaining and managing the load across all of those systems.
+ The load balancer adds or removes devices as you need and so if you need additional capacity on your network then you simply add additional servers to the load balancer.
+ The when the server fails then the load balancer identify that server that is no longer working, administratively remove it from the load balancer, and then spread the load against the remaining servers.
+
+Site Resiliency:
+
+ We can spread this resiliency out to physical locations.
+ This is site resiliency, and you might have a recovery site that is already been allocated in case of a disaster.
+ All of the data is synchronized at that site, and you are simply waiting for a problem to occur. When that disaster is called that business could move their entire data center to a completely different location that would be physically separated from the disaster. This allows all of your normal operations to continue for the duration of the particular event.
+ You might only switch over to the recovery site to the number of hours or you may be using that recovery site for weeks at a time.
+ Once the disaster event is over, you can then move from the recovery site back to original data center.
+
+⇒ One type of recovery site is a Hot Site
+
+Hot Site:
+
+ Hot site is exact replica of your data center.
+ All of your hardware that is running in your data center, which also means every time you purchase for your existing data center you also purchase for the hot site.
+
+Cold Site:
+
+ Cold site means empty building there is off course power and lighting, but you will need to bring all of your data so that you have something that you can reference and all of your equipment and all the people required to run this particular site.
+
+Warm Site:
+
+ This is a midrange between a hot site and cold site, where there is some equipment on site. And perhaps some of the data is available but you will need to bring additional hardware to additional data that cover anything that may not be available.
+
+Geographic Dispersion:
+
+ These sites should be physically different than the organization’s primary location.
+
+⇒ Another type of resiliency is Platform Diversity
+
+Platform Diversity:
+
+ Every operating system contains potential security issues that you can’t avoid.
+ Many security vulnerabilities are specific to a single OS. Windows vulnerabilities don't commonly affect Linux or MacOS and vice versa.
+ Use many different platforms like different apps and clients, OSes and this allows to spread the risk around and perhaps limits any exposure to one single vulnerability.
+
+⇒ We can also provide resiliency in the cloud itself.
+
+Muti Cloud Systems:
+
+ off course there is not one single cloud provider rather we have multiple cloud providers. We might be using AWS, Microsoft Azure, Google cloud etc.
+ All of this cloud provider has their own processes and their own procedures. If there is an outage with one cloud provide that generally does not affect other providers. Ideally if there is outage with one provider, we might have similar services available on a separate provider.
+ We could provide app services from multiple cloud providers and have data in different locations as well. This is also important from a security perspective. If there is security concern with one security provider having our info with different cloud providers may provide us with uptime and availability. That wouldn’t be there if we were only using a single provider.
+
+Continuity of Operations Planning (COOP):
+
+ If there are no disaster recovery technologies, then we have to then use some type of failback method and we refer to this COOP.
+ We have almost become to accustomed to our technology. And when technology is not available, we need find some non-technical way to still provide the same services.
+
+For Example:
+
+ We have a manual process for completing transactions and having people sign off physically or you may be providing paper receipts instead of automated receipts that you might come from point-of-sale system.
+
+ Capacity Planning:
+
+ Match supply to the demand!
+ Too much demand the application slowdown and outages
+ Too much supply You are paying too much.
+ Requires a balanced approach Add the right amount of people, apply appropriate technology, build the best infrastructure.
+
+ Backups:
+
+Onsite backups:
+
+ No internet link required.
+ Data is immediately available.
+ Generally, less expensive than off site
+
+Offsite backups:
+
+ Transfer data over internet or WAN link.
+ Data is available after a disaster.
+ Restoration can be performed from anywhere.
+
+Journaling:
+
+ When you are writing info to a drive and the middle of that writing process, you lose power to the system, this means some data will be written to the drive, and the other data will be lost. This may leave the database or info that you are saving into a format that can no longer be used by app. if you find yourself with corrupted data after you have a power outage , then you will need to remove that corrupted data and restore all of that data from backup. This is obviously time consuming and not having access to that data could be financial loss for your organization. To avoid this corruption, you may want to implement some type of journaling. Some apps will have their own methods of performing journaling and there may be options within the OS or file system that you are using to also provide a journaling function.
+
+ Journaling works by first writing the data to a journal and that is stored on that drive and once the journal is written that info can be copied into the final version of that data. If you lose power while writing to the journal, then obviously the data inside of the journal will be lost. But since no data was written to the database when the power went out, the database is not going to be corrupted. But let’s say the power goes out btw the time that the journal is writing into the database. The power comes on the database will obviously have a corruption. But it will look at that last journal to be able to update the info that is missing. This means that corruption can then be corrected in real time as the system is starting up. Once we know that info is correctly written to the journal and then correctly written to the database and then we can delete everything in the journal and start the process again
+
+ Hardening Targets:
+
+ No system is secure with the default configurations you need some guidelines to keep everything safe.
+ hardening guides are specific to the software or platform and if there are no default hardening guides came with the product then you need to contact the manufacturer for the hardening guide.
+
+Mobile Devices:
+
+ The mobile devices we use every day are very good examples of devices that must be hardened. Fortunately, the manufacturer of these devices often provides hardening guides and suggestions for keeping those devices secure.
+ Manufacturers will release patches for bug fixes. But many of these also include security updates. When we install the patch, we are closing any vulnerabilities that might be used to attack those devices. Another hardening technique is to segment the data that is stored on these mobile devices. If you are working for a company, there is usually a segment that is set aside just for the company data and another segmentation that’s set aside for user data. This provides a logical separation btw your personal info and info from the company. If an attacker to gain access to one of those segments they would not necessarily have access to any other data on that device.
+ If you are managing a large group of mobile devices, then you are probably using a Mobile Device Manager or an MDM, to be able to monitor those devices and push out any security updates.
+
+Workstations:
+
+ Off course it is not that our mobile devices only hardening but also, we need to harden our workstation which are running windows, macOS, Linux and other operating systems. These platforms also have periodic updates. These are bug fixes, security patches, and they can apply to the OS itself and apps running on the OS or the firmware of the device.
+ Many of these companies will compile the security patches and then release all of them on one day of the month. This allows you as the security administrator, to test all of those patches at one time before deploying them. This simplifies the process and makes it much more efficient to get these patches out to those devices.
+ And always it’s a best security practice is to remove any software that you are not using on that device. So, every piece of software is an opening for a vulnerability. So, removing that from the system gets rid of that particular risk.
+
+Network Infrastructure devices:
+
+ Our network infrastructure is always working behind the scenes, and we have to consider security hardening for our switches, routers, firewalls and other network infrastructure devices.
+ These devices generally don’t run an off the shelf operating system. They only run with Embedded OS, limited OS access.
+ One security best practice is to always change the default credentials.
+
+Cloud Infrastructure:
+
+ Secure the cloud management workstation.
+ We can also use our cloud management workstation to ensure that we are using least privilege.
+
+Least Privilege: 
+
+ This means that we are configuring apps and devices in the cloud to only have the min access required to perform their function.
+ It is also good to have EDR: Endpoint Detection Response installed on these cloud-based systems. that way we can monitor for any potential attacks and confirm that those devices are up to date with the latest malware technologies.
+ Even cloud-based services should have a backup, and which are prone to outages.
+ Backing up the cloud data to a separate provider is a best practice.
+
+Servers:
+
+ Many and varied servers like Windows, Linux etc.
+ Updates Operating system updates, service packs, security patches
+ User Accounts Min password lengths and complexity and account limitations
+ Network access and security Limit network access.
+ Monitor and Secure Antivirus and Antimalware
+
+SCADA ICS: 
+
+ Supervisory Control and Data Acquisition System
+ SCADA is large scale and multisite industrial control systems.
+ PC Management Equipment Power generation, refining, manufacturing equipment facilities, industrial, energy, logistics
+ Distributed Control Systems: Real time info, system control
+ Requires extensive segmentation No access from the outside.
+
+Embedded Systems:
+
+ Hardware and software designed for a specific function or to operate as part of a large system.
+ Can be difficult to upgrade.
+ Correct Vulnerabilities Security patches remove potential threats.
+ Segment and firewall Prevent access from unauthorized users.
+
+Real Time Operating System:
+
+ RTOS is deterministic that means there is a certain expectation of time frames for every process to occur on those systems. With a RTOS individual processes have a certain expectation of running in that OS in a particular time frame.
+ This is especially important for Industrial equipment, military environments or automobiles where you need to make a lot of decisions in a very short period of time.
+ This is obviously isolated from the rest of the network so that no other device can affect the running of RTOS. You should also consider running with the min number of services and that way you would have only those services necessary running on those particular systems. And if those devices need to communicate out to the network, you may want to consider a separate firewall or host-based security technology.
+
+ Securing Wireless and Mobile:
+
+⇒ If you are installing a new wireless network or you are troubleshooting an existing wireless network, you may want to consider performing a site survey.
+
+ Site survey allows us to better understand how your wireless network may perform. And also give insights into how other networks around you may be affecting your signal.
+ One of the first steps of sight survey is to get a better understanding of what access points may be currently installed. This may be accessing points that are part of your network or simply located in a close geographical area. Obviously if there are access points that are outside of your control, then you have to configure your access points to work around the existing frequency use.
+ The site survey will detail everything about the current spectrum and give an idea of what channels might be best for your wireless network.
+ And of course, with technology things can change quite a bit. So, it might be a good idea to perform this site survey on regular intervals. This will give you a chance to see if the access points outside of your control may have changed or there might be additional access points that might require you to make changes to your existing wireless network.
+ A good way to visualize your wireless network is with a heat map.
+
+Heat Map:
+
+ These heat maps allow you to go from room to room and get an idea of what you might expect with the signal strengths on your network.
+
+Wireless Survey Tools:
+
+ You might also use wireless survey tools to gather more info about the wireless networks around you.
+ This can provide summary of all of the access points or SSIDs that are in your area, you can see BSSID, channel info and band, frequency and other info about the wireless network.
+ It is also a good way to see type of interference might be in your area and if you are trying to track down where problem areas might be on your wireless network and these survey tools can provide you with a great deal of feedback.
+ Our OS tools also include a number of built-in tools for wireless networking. Sometimes this is a sperate utility you can run or may be built into the wireless interface that is currently associated with your connection. There are also a number of third-party tools that you can download.
+
+Example: Third party tools like Net spot.
+
+ Spectrum Analyzer will show all signals on a particular frequency whether they are originated from an access point or from any other device.
+
+MDM: Mobile Device Manager:
+
+ Many organizations will manage their mobile devices through the use of a mobile device manager or MDM.
+ MDMs are especially useful for managing devices that may be owned by the company and also for devices. that may be user owned.
+ And these user owned devices are called BYOD (Bring your own device).
+ MDM allows system administrator to manage all of the mobile devices for a particular organization.
+ This means that they can roll out certain policies or require that certain apps are always installed on those devices.
+ It is also used to set policies on what features of the mobile device may be used.
+
+BYOD: Bring your own Device.
+
+ This is when employee brings his personal phone into the workplace to be used for both personal use and for work purposes.
+
+COPE: Corporate Owned, Personally Enabled
+
+ Company busied the device and used as both a corporate device and a personal device.
+
+CYOD: Choose Your Own Device
+
+ Similar to COPE, but with the user’s choice of device.
+
+Wireless Security Settings:
+
+MIC: Message Integrity Check Used to verify the integrity of all communication in the wireless network
+
+The WPA2 PSK Problem
+
+ WPA2 has a PSK (pre-shared key) brute force problem, and it listens to the four-way handshake.
+ Some methods can derive the PSK hash without the handshake.
+ Captures the hash and with the hash the attackers can brute force and can obtain pre-shared key (PSK).
+ As technology has improved this had become very easier and we found new ways for brute forcing even more efficiently. And these days you can use techniques such as
+ GPU Processing, Cloud based password cracking to be able to reverse engineer the password in just a number of days.
+
+WPA3 and GCMP:
+
+ When it came time to update WPA2 to the new version of WPA3, we introduced new technologies to avoid this type of brute force attack. This includes a new block cipher mode, and it is called GCMP (Galois Counter Mode Protocol.
+
+GCMP: 
+
+ GCMP is a stronger encryption than what was used previously with WPA2. GCMP includes data confidentiality with the encryption associated with the AES protocol. It has a Message Integrity Check that’s included with that Galois message authentication code.
+
+⇒ And off course the brute force could be used to derive pre-shared key with WPA2. PSK is no longer problem with WPA3.
+
+⇒ WPA3 changes the PSK authentication process, and it includes mutual authentication and creates a shared session key without sending that key across the network. No more four-way handshake, no hashes, no brute force attacks.
+
+SAE: Simultaneous Authentication of Equals
+
+ This new method of deriving the shared session keys in WPA3 is called SAE.
+ This uses a derivation of Diffie Hellman key exchange. So not only are you able to derive that shared key on both sides, but you are also able to add an authentication component. Everyone on the wireless network gets a different session key. So even if you are all using same pre-shared key, you won’t be able to see any of the traffic.
+ WPA3Personal WPA3PSk Which is used in home WIFI systems.
+ WPA3Enterprise WPA3802.1X is used in Offices.
+
+⇒ One of the popular authentication protocols you might see is RADIUS. 
+
+RADIUS (Remote Authentication Dial in User Service)  
+
+ RADIUS is centralized authentication for users:
+
+→ Routers, switches, firewalls
+
+→ Server authentication
+
+→ Remote VPN access 
+
+→ 802.1X network access
+
+⇒ RADIUS services are available on any OS.
+
+ IEEE 802.1x:
+
+ 802.1x is a port-based Network Access Control
+ You don’t get access to the network until you authenticate.
+
+⇒ One of the protocols used in that 802.1X process is EAP: Extensible Authentication Process
+
+ EAP is a framework that allows us to embed the authentication within the 802.1X process.
+ EAP integrates with 802.1x to provide that authentication to the network.
+
+Application Security:
+
+Quality Assurance:
+
+ This is a testing process where they will not only test the functionality of the app, but they also run a series of security checks as well.
+
+Input Validation:
+
+ Application developers will often perform input validation when info is going into their app.
+ This ensures that any unexpected data that’s put into one of those inputs will not be interpreted by the app.
+ There are many different ways to input the data to app and they are forms, Fields, type.
+
+Fuzzers:
+
+ Fuzzers will put random types of data into the input fields to see what the application might do. And if the app performs unexpectedly, the app developer needs to go back and change the way that they are doing their input validation.
+
+Secure Cookies
+
+Cookies: Cookies are small bits of info that are stored inside of your browser that helps provide tracking info for sites that you visit and personalization, session management.
+
+ Cookies are not executable not generally a security risk.
+ Secure cookies have a secure attribute set and browser will only send it over HTPPS.
+ Sensitive info should not be saved in a cookie.
+
+ Threat Intelligence:
+
+CTA: Cyber Threat Alliance
+
+ CTA is a group of organizations that gather details about these threats and put it together into a standard format and distribute that info to everyone else in the alliance. The Alliance will validate each submission and then they will score those submissions to set a severity level for that threat. Then everyone in that alliance can view that threat intelligence and decide how they want to use that intelligence with their network.
+
+Analyzing Vulnerabilities:
+
+⇒ We refer false information has False Positive
+
+False Positive:
+
+Example: We have been given info that this particular vulnerability exists in this OS. But after looking into it, you see that vulnerability really does not exist in that OS. In this scenario you have been given a positive and that positive is false.
+
+ When you look at a report of all of the vulnerabilities that may exist on the system, they are usually in order of severity. So, there may be high severity or critical vulnerabilities, there may be some that are low or informational. Sometimes these vulnerabilities are marked as low or informational and these low or informational are called a false positive.
+ Although these vulnerabilities are marked at a lower priority, they are still valid vulnerabilities, and they should not be referenced as False Positive. The reverse scenario to a false positive would be a false negative. In many cases false negative is much worse than false positive.
+
+False negative: A false negative means that vulnerability does exist on that OS, but you are scanning software did not detect it and that means in your report of known vulnerabilities, you won’t see that vulnerability listed anywhere. And if an attacker does come across that system, they may be able to exploit that vulnerability that you had no idea that even existed.
+
+ If you are planning to perform a vulnerability scan, it’s always a good idea to update your signatures. That way you will minimize the number of false positives. And hopefully you won’t run into a situation where there is a false negative.
+
+CVSS: Common Vulnerability Scoring System
+
+CVE: Common Vulnerabilities and Exposures
+
+Exposure factor:
+
+⇒ Once we have identified a vulnerability in our network, we want to understand how risky it might be to have that vulnerability existing on those systems. 
+
+Risk Tolerance:
+
+ The amount of risk acceptable to an organization is called Risk Tolerance.
+
+Security Tools:
+
+⇒ On your enterprise network, there are probably many different security tools. You might have NGFW or an IPS or vulnerability scanners and the NGFW, IPS and all other security tools try to find the same vulnerability. But they might all use different terms, different titles, different descriptions and all to describe the same vulnerability.
+
+⇒ To address this kind of problem the industry has created the SCAP: Security Content Automation Protocol.
+
+ This SCAP protocol is maintained by NIST.
+ SCAP allows for the consolidation of these vulnerabilities into a single language that all devices will understand. So, if you find the same vulnerability with a next gen firewall, IPS, and a vulnerability scanner, SCAP will allow all of those devices to identify them as exactly the same vulnerability. This also means that these very diverse security tools can now start working together and automate the detection removal of these vulnerabilities from your network.
+ SCAP content can be shared btw tools, and it is focused on configuration compliance and detect applications with known vulnerabilities easily.
+ Especially useful in large environments and many different OS and apps.
+ This specification standard enables automation even with different tools.
+
+Automation Types are:
+
+1. Ongoing Monitoring
+2. Notification and alerting
+3. Remediation of noncompliant systems
+
+Benchmarks: Applying Best Security Practices
+
+DLP: Data Loss Prevention:
+
+ If you would like to stop sensitive info from being transferred across your network, then you should use DLP.
+ DLP blocks anything that is transferring sensitive info via network.
+
+SNMP: Simple Network Management protocol.
+
+ You may not realize it, but you probably have monitoring software that’s built into the system that you are using right now. This info is usually collected and provided using SNMP.
+ Depending on the device you are using there is a specific database of info that is collected on your system. We refer to this database as a Management Information Base (MIB).
+ Inside the MIB are a series of metrics that are being monitored and instead of spelling out the individual name of each metric, we instead use Object Identifiers. Which is a group of numbers that you sometimes you will hear these referred to as an OID (Object Identifiers).
+ In the packet capture we can see that the SNMP data being sent across the network over UDP port 161.
+
+SNMP Traps:
+
+ Most SNMP operations expect a pool, and devices then respond to the SNMP request, and this requires constant polling.
+ SNMP traps can be configured on the monitored device and communicates over UDP port 162.
+ This SNMP Traps set a threshold for alerts and if the number of CRC errors increases by 5 , send a trap and the management station and once the management station receives the trap, it can then fire off alerts, alarms, and text messages and emails and perform additional automation just by receiving that trap.
+
+⇒ SNMP focuses on gathering lower-level metrics from these devices such as utilization or number of packers passing through an interface. But there is obviously more info that can be gathered from this info going across the network. 
+
+⇒ And one of the ways to gather additional details is by NetFlow. 
+
+NetFlow:
+
+ NetFlow is standard for monitoring traffic flows and looking at statistics relating to application use. There are many organizations that have NetFlow compatible agents and NetFlow Management stations or hardware devices.
+ NetFlow commonly works by first having a probe to compile this info for the traffic flows. This NetFlow probe may be built into the software that’s included with a switch or router or may be included as a separate external probe. These probes connect to the network with a monitoring port from a switch. Like a switch port analyzer or SPAN or there is physical tap on the network providing the NetFlow probe with a copy of all network traffic flows and these flows will then collect info and send copy of those metrics down to a NetFlow collector, which can then be used to create reports and other details about the app traffic flows on your network.
+
+ Firewalls:
+
+Traditional Firewalls:
+
+ Traditional firewalls will look for port number to allow or disallow traffic.
+
+Example: TCP port 80 or TCP port 443
+
+Next generation Firewall:
+
+ NGFW firewalls will look for Application Names to allow or disallow traffic.
+
+Example: Web Server, SSH Server, DNS Query etc.
+
+Firewall Rules:
+
+ Most firewall rules start at the top of the rule base and begin evaluating each rule individually until it matches a rule that is listed in that rule base.
+ This means we usually put the more specific rules at the top of the firewall, so we can recognize them quickly, and then more generic or broad rules can go lower down in the firewall rule list. Most firewalls will also include an implicit deny as part of the rule base. That means that it will step through each rule in succession from very top to very bottom. If no rule matches in the firewall rule base, we have to know what to do with the traffic once we reach the bottom of the rules. And in the case of implicit deny firewall, everything that doesn’t have a specific match in the rule base will automatically be denied once it reaches the bottom of the list.
+
+⇒ Another way to describe a rule base or policy list in a firewall is an ACl: Access Control List
+
+ACl: Access Control List:
+
+ Allow or disallow traffic.
+ Grouping of categories Source IP, Destination IP, Port Numbers, Time of Day, Application etc.
+
+ Web Server Firewall Ruleset
+
+| Rule Number | Remote IP | Remote Port | Protocol | Action |
+|  |  |  |  |  |
+| 1 | All | Any | TCP 80 (HTTP) | Allow |
+| 2 | All | Any | TCP 443 (HTTPS) | Allow |
+| 3 | All | Any | TCP 22 (SSH) | Allow |
+| 4 | All | Any | TCP 3389 | Allow |
+| 5 | All | 53(DNS) | Any (UDP) | Allow |
+| 6 | All | 123(Network Time Protocol) | Any (UDP) | Allow |
+| 7 | All | | ICMP | Deny |
+
+Screened Subnet:
+
+ An additional layer of security between you and the internet
+
+ Web Filtering:
+
+Content Filtering:
+
+ Control traffic based on data within the content and also called URL filtering, Website category filtering.
+
+⇒ One type of content filtering is one that based on a URL: Uniform Resource Locator. and sometime this is also referred to as URI: Uniform Resource Identifier.
+
+URL: Uniform Resource Locator
+
+ Allow list Block list is there for URL.
+ Managed by category.
+ URL Filters are very good at controlling the info that you see in the browser window. But there are many different ways to access data on the internet.
+ These days this URL filtering is commonly built with NGFW, so you need one single device to be able to manage all of the firewall rules, IPS and URL filtering.
+
+Example: Auction, hacking, Malware, Travel, Recreation etc.
+
+Agent Based URL Filtering:
+
+ A URL filter built into a firewall assumes that the users are going to be in place where the firewalls is managing the traffic. In today’s networks where people are very mobile and people are working from home, you may not have that luxury and instead, you may want to put the control of those URLs on the client itself. This would be agent-based content filters that are installed on the user’s desktops and other devices. All of these are managed through a central console, but the decision process occurs on the user’s device directly.
+ The agent that on the system will manage the control of the content with agent-based systems we need to make sure that the agents were constantly updated with the latest list of URL categories. We need to push updates to all of these devices on a regular basis. So always we need to make sure that the users have latest list of URLs on those agents.
+
+Explicit Proxy:
+
+ With some proxies, we have to tell our application to use proxy for communicating rather than communicating directly to the server and we refer to this as Explicit Proxy. Because we are explicitly configuring that proxy in the app config.
+
+Transparent Proxy:
+
+ There are also proxies that don’t require this type of config and are simply able to work without any special config on the client and since this proxy is able to work without the end user even realizing that even it is there, we refer this proxy as Transparent Proxy
+
+Forward Proxy (Internal Proxy):
+
+ In forward proxy the user and the proxy are in the internal network of the organization and generally the organization has control over the config of the proxy. The user makes a request to the proxy and then the proxy makes its own request to the website on the internet then the proxy receives a response from that website. Where it can then provide additional security, such as URL filtering and checking for any type of malware and once the proxy checks this data and it knows all of the info is safe then it can then send the response down to the user.
+
+ Operating System Security:
+
+⇒ If you are working in an environment with many windows systems then you probably taking advantage of Active Directory.
+
+Active Directory:
+
+ Active Directory is a database containing all of the different components of your network. This includes all computers, user accounts, file shares, printers, security groups, and more.
+ Since all of this info is stored in a central redundant database, we can manage all of our authentication from the central resource. When a user needs to login to a device or authenticate to another resource, they would use the username and password that is already defined in the Active Directory Database. We can use Active Directory Database to assign access permissions. We can create a list of permissions and assign those permissions to an individual user, or we can create a group of users and assign those permissions to the entire group. If you are adding accounts and managing these access rights, modifying passwords, removing accounts you are probably performing all of those functions using Active Directory.
+
+Group Policy:
+
+ Manage the computers or users with Group Policies local and domain policies.
+ A central console known as Group policy management editor. for login scripts, Network Configurations (QOS), Security Parameters.
+ The combination of Active Directory and this group policies provide comprehensive control mechanism for everything that’s on the network.
+ If you need to set config setting for a particular device or you need to config security policies for an individual user, you can perform all of these functions using group policy.
+
+Security Enhanced Linux (SELinux):
+
+ The Linux operating system by default, works as a DAC: Discretionary Access Control device and this means that the user has their own discretion to be able to assign rights and permissions to the different resources in the Linux OS.
+ But in many highly secure environments, a DAC is not appropriate. Instead, they would like to use MAC: Mandatory Access Control, where all of those rights and permissions are assigned by central administrator.
+ MAC limits application access from least privilege and a potential breach will have a limited scope.
+ SELinux is an open source that is already included an option with many Linux distributions.
+
+Email Security:
+
+⇒ First, we need some device that will be able to make the decision on whether this email is legitimate or not, this decision is made by the mail gateway.
+
+Mail Gateway:
+
+ This is the gatekeeper of all of the mail for your organization, sometimes there is a single server there may be multiple email gateways for your environment.
+ This will take info coming from other mail servers on the internet and it will grab those emails before putting them into the email inbox and it checks those emails to see if it was really sent from a valid source. And if it is valid, it gets put into your inbox. If it is not valid, it will probably be discarded or put into your spam folder. If you have mail gateway on premises, then you are probably putting that into a screened subnet. because it does need to communicate with other devices on the internet and of course you can have that mail gateway function also stored in the cloud and there are many third-party services that will provide you that functionality for you.
+
+SPF: Sender Policy Framework
+
+ If you are in charge of email for a domain, then you need to add a sender policy framework to your DNS record.
+ This SPF protocol defines which email servers are authorized to send mail on our behalf and these are added to your DNs as text or TXT record. That means that anyone on the internet could query your DNS server to see that values that are saved in the text record.
+
+⇒ Additional verification to my outgoing emails can be provided using Digital Signatures. I can configure my mail server to automatically to digitally sign all of the email being sent to a third party. This is using a key that can be validated from a DKIM. that is in my DNS. This is not a digital sign that I’m adding to my message, this is a digital sign added to the transport process btw mail servers. This is not something that is commonly seen in your email, you would have to look at the headers of the email, and you should find DKIM sign in those headers.
+
+DKIM: Domain Keys Identified Mail
+
+⇒ When I send an email to third party they are able to validate the SPF or DKIM info and feel comfortable that the email originated from me, but what if the SPF and SKIM info did not properly validate? what process should the receiving email server take with that particular email?
+
+ ⇒ We can specify what would people to do with those emails by adding DMARC record to our DNS.
+
+DMARC: Domain Based Message Authentication Reporting and Conformance.
+
+ DMARC is an extension of the Sender Policy Framework and the Domain Key Identified Mail Function. As you probably guessed there is a DNS text record that we would add defining what to do with these messages that don’t validate, and we can specify different actions on depending on what we would like to have happen to those emails.
+
+For Example:
+
+ Your options for DMARC are to accept all messages, send those messages to a spam folder or simply reject those emails. So now when the third-party mail server is not able to validate the email, they can check with my DNS server to see what I would like to have happened to those messages.
+ Another nice feature of DMARCC is you can specify a destination for compliance reports. This means that the receiver of email message that say they are from me can validate those and create reports showing how many of those  messages are validated properly and how many of those messages did not validate properly and all of those metrics can be sent to central reporting engine and this allows the domain owner to create reports showing how many messages are being sent and validated properly on the internet and how many message may be sent that are spoofing my email domain
+
+ Monitoring Data
+
+FIM: File Integrity Monitoring
+
+ Some files change all the time, and some files should never change.
+ Monitor important OS and app files and identify if there is any change occurs.
+ It is very good to know in a security perspective, if these files that should never be changing are suddenly modified, and there are ways to provide monitoring and alerting if any of those file’s change. We refer to this software as a FIM: File Integrity Monitor.
+ In windows this FIM is done on demand using built in system file Checker: SFC.
+ SFC will scan all of your critical OS files, check to make sure that none of those files have been changed or modified and if they have been modified, SFC will replace those filed with a good version.
+ If you are running Linux one popular utility for FIM is Tripwire and this will also monitor for file changes and can provide real time monitoring. so, you will instantly know if a file is modified.
+ There are many different options available for host-based intrusion prevention systems. Not only will an IPS look for and block any attacks against known vulnerabilities it can also perform FIM.
+
+ Endpoint Security:
+
+⇒ The Endpoint is the device used by the user. This might be a desktop, laptop, or any type of mobile device.
+
+⇒ To be able to identify any of this malicious software, we need to not only monitor information that is inbound but also outbound traffic.
+
+ The first place to look at security in most organizations is at the edge. And the edge is the part of the network where the inside of the network meets the outside or internet side.
+ We usually protect the edge of a firewall that will monitor all traffic going from inside to the outside and vice versa. This is usually managed through a number of security rules that are on the firewall itself, and those rules tend to very static.
+
+Access Control:
+
+ Access control describes the ability to limit a device’s access to a certain type of data. This might be a user who’s on the outside trying to access to inside data or vice versa. We can usually create access rules that list a number of different parameters.
+ Access can be based on user, group, location, application etc.
+ Access can be easily revoked or changed We can change the security posture at any time.
+
+Posture Assessment:
+
+ This is a process that is usually done on all device’s desktops, laptops, mobile devices and anything else. We are looking for any kind of device that may not be up to the latest standards of security.
+
+Health Checks Posture Assessment:
+
+Persistent Agents:
+
+ Permanently installed onto a system
+ Periodic updates may be required.
+
+Dissolvable Agents:
+
+ No installation is required.
+ Runs during the posture assessment.
+ Terminates when no longer required.
+
+Agentless NAC:
+
+ This type of agent is integrated with Active Directory
+ Checks are made during login and logoff.
+ Nothing can be scheduled.
+
+EDR: Endpoint Detection and Response
+
+⇒ It’s estimated that there are over a million different virus variants being created every day. This means our Antivirus software has to constantly updates and we have to be sure that it can scale very large numbers of viruses.
+
+ ⇒ Given this large number of viruses variants and the different ways that attacker is using to get into our systems, we need a more modern way to monitor these endpoints. One of those ways is through EDR.
+
+ EDR is the idea of taking signatures and extend its visibility into things like behavioral analysis or machine learning, be able to monitor processes running on the system and correlate all of these together to determine if threat might exist and this usually runs as an agent that’s running on the endpoint very similar to antivirus or antimalware agent.
+ EDR takes this one step further than antivirus or antimalware by providing root cause analysis.
+
+Root Cause Analysis:
+
+ We are able to determine why the virus got onto that system and then work backward to find a way to remove the virus and then prevent it from infecting any other systems.
+
+⇒ The response to anything that may be found as suspicious can be completely automated. So, if a virus or malware is suddenly discovered on a system, it can be automatically isolated, and that particular malware can be quarantined, and we can have the entire system rolled back to known good config. All of this happens automatically there is no user intervention is required, and that system can be back up and running and the user working relatively quickly.
+
+⇒ We can also build more intelligent EDR by creating an Extended Detection and Response (XDR):
+
+ XDR provides additional intelligence and provide a larger scope of data input to discover any malicious software. This means that we can catch detections that might have previously been missed and anything that may have come up as a false positive might now be properly categorized.
+ long investigations times with EDR are speed up in XDR.
+ Whenever there is a virus infection or attack on a network, it often involves more than one system. So instead of having a single agent that only knows what’s happening on a single device, XDR can interpret data from many different systems simultaneously.
+ Add another data source relating to the type of network traffic running over the network, and you are now able to correlate info across multiple systems and very diverse data types.
+ This provides a much more efficient process for identifying, investigating, removing the malicious code.
+
+⇒ The key to XDR being able to monitor a large amount of data and be able to correlate that data together. One data source that is used for XDR are user behavior analytics.
+
+User Behavior Analytics:
+
+ This interprets user activity to build a baseline. XDR would know what user would commonly be on this network and what devices these users would connect to, the type of network traffic that would commonly be transferred and the data repositories that are accessed by these users. If we look at all of these data points and have understanding of what normal activity might be, we can easily find when abnormal events occur. This definition of unusual course can change over time. But it usually is referencing a set of rules that are configured in the XDR software. May be it is performing some kind of pattern matching to a known vulnerability or maybe it's based on statistical analysis and making best guess to what type of traffic might be on the network and the goal is simplify the process of finding the malicious code and then stopping it in real time before it becomes much larger problem.
+
+Identity and Access Management (IAM):
+
+ From a security perspective, we need to give rights and permissions to right people at the right time to provide them with the access that they need, and we refer to this as Identity and Access Management.
+
+Provisioning deprovisioning user accounts
+
+ Provisioning deprovisioning user accounts starts with the user account creation process.
+ Provisioning deprovisioning occurs for certain events like Hiring, transfers, promotions, job separation.
+ Thus, type of deprovisioning and provisioning the user account is the core to the IAM process. An initial checkpoint to limit access and nobody gets admin access.
+
+⇒ One common authentication protocol is. 
+
+LDAP: Lightweight Directory Access Protocol
+
+ It is a protocol for accessing large directories of data on the network.
+ LDAP is a very standardized protocol; the standard is the X.500 specification, and it was written by ITU: international Telecommunication Union.
+
+⇒ Another protocol for Authentication and authorization is SAML: Security Assertion Markup Language.
+
+ SAML allows for the authentication of a user to a third-party database. So instead of maintaining your own database of users, you can simply use one that’s already been created elsewhere.
+ SAML not originally designed for Mobile devices.
+
+OAuth:
+
+ An authentication protocol that was built to work with our more modern and mobile systems is OAuth.
+ OAuth is an authorization framework and once you authenticate OAuth determines what resources a user may have access to.
+ The Oath authorization framework was built by some of largest companies in the industry. Since these companies wanted to provide access for all of their users wherever they might be and whatever systems they may be using OAuth was the solution.
+ Since OAuth is an authorization framework, there is still something that needs to be providing authentication. SO, you often see OpenID used in conjunction with OAuth to combine both the authentication and authorization.
+
+Federation:
+
+ Federation allows network access without using a local authentication database.
+
+For example: Third parties can establish a federation network by authenticating and authorizing between the two organizations like logging with Facebook.
+
+ The third parties must establish a trust relationship like Facebook.
+
+Interoperability:
+
+ When an organization is making a decision on which technologies they should be using, they have to make sure that all of these are interoperable.
+ Sometimes this interoperability decision is based on what resources you happen to have at that time.
+
+For Example, let’s say you are installing a brand-new VPN concentrator and looking at the options that are available on the VPN you can see that does support access to an LDAP server for authentication. If your company already has an Active Directory server or some other type of LDAP server for authentication, then that is the perfect match btw the VPN concentrator needs and the resources you currently have available.
+
+ Access Controls:
+
+Least Privilege:
+
+ Rights and permissions should be set to bare min, and you only get exactly what’s needed to complete your objective.
+ All user accounts must be limited, and apps should run with minimal privileges.
+ Don’t allow users to run with administrative privileges.
+ Limit the scope of Malicious Behavior.
+
+Mandatory Access Control (MAC):
+
+ MAC assigns a label to each resource that someone may need access to particular file or folder may be tagged as confidential, secret, top secret.
+ One important aspect of MAC is that admin of the system is the one that defines what types of rights and permissions a user might have.
+
+Discretionary Access Control (DAC):
+
+ The user that creates the data has the control on who can access the data and how they can access that info.
+ Unfortunately, DAC is less secure because you are relying on each individual user to set the appropriate security controls for every piece of data that you create.
+
+Role Based Access Control (RBAC):
+
+ This access control is based on your job function. SO, if you are a manager, you have a certain type of rights and permissions to data. SO, if you are a director then you have different rights and permissions.
+ A group is created by the admin and then the rights are assigned to the group. The administrator will add users to that group. each user added to the group receives the rights and permissions associated with that group. So, we don’t have to assign specific permissions directly to a user. We can simply add the user to the group.
+
+Rule Based Access Control:
+
+⇒ Some access control methods have a list of rules, and those rules are associated with rights and permissions. We refer to this as Rule Based Access Control because there are number of systems enforced rules that are created by system admin. This means the user does not control any of the rights and permissions of that group or create any rules.
+
+ The admin will have full access to control the rights and permissions.
+
+⇒ More modern style of access control is Attribute based Access Control 
+
+Attribute Based Access Control (ABAC):
+
+ With an ABAC there are many different criteria that you can use to determine whether someone would have access to data or not.
+ This allows admins to create a very complex rule sets that determine whether certain types of data are accessible or not.
+ You can think this as next generation of an authorization model. So in this type of access control that takes into account a number of different criteria, may be evaluating the IP address of the person making the request or the time of day, the desired action, whether they are writing, reading info and what relationship they might have to the data. The admin can combine many different criteria together to determine exactly what type of control someone might have over any object.
+
+Multifactor Authentication:
+
+1. Something you know
+ Password, PIN, pattern on mobile screen or tablet
+1. Something you have:
+ Smart Card, USB security key, Hardware or software tokens, your phone is also something you have because you get an OTP or SMS to verify anything.
+1. Something you are:
+ Biometric info
+1. Somewhere you are:
+ Provide a factor based on your location.
+ IP address is not perfect but can help provide more info and works with IPV4, not so much with IPV6.
+ Mobile device location services: Like GPS and 802.11 network but it is not a perfect identifier of location.
+
+ Password Security:
+
+Password Manager:
+
+ Password manager will allow us store all of the passwords in one single database.
+
+Just in time permissions:
+
+ We use just in time permissions to allow a technician to receive admin access for a limited amount of time using a set of credentials that is also temporary.
+
+Scripting and Automation:
+
+Guard Rail:
+
+ Automation can also be used to stop human from making mistakes and that is called guard rail.
+ The guardrail is an automated verification of information going into the system.
+
+Scripts and Considerations:
+
+1. Complexity:
+ Scripts are relatively complex, and they have to interact with other devices and other systems.
+ This requires a great deal of testing to make sure that all of this work well together.
+1. Cost:
+ these scripts also don’t create themselves. Someone does have to sit down and go through the process of coding out all of these different scripts. But there is not only a time involved but also cost associated with script creation.
+1. Single point of failure:
+ Like any other device in your network, that script could be a single point of failure. If that script stops working, there could be a significant problem that reply on that automation.
+
+Technical Debt:
+
+ Patching problems may put issue down the road, and it is going to be more expensive to fix later.
+
+Ongoing Supportability:
+
+ The script works great today but the script, may not work great tomorrow and you need plan for changes and updates.
+
+ Incident Response:
+
+Incident Response Life Cycle:
+
+1. preparation 
+2. Detection and Analysis
+3. Containment, Eradication, and Recovery
+4. Post Incident Activity
+
+Preparation of an Incident:
+
+ Before an incident even occurs, there is a great deal of planning that takes place. One of the things you should have available is the list of communication methods. there should be up to data contact list with all of the people who should be informed when an incident occurs.
+ You also want to have an incident go bag where you have all of the hardware and software required to address any type of incident. This might have laptops with specialized software or there could be removable media for copying items from one system to another.
+ You could also have forensic software to be able to capture info on that system. And it might be a good idea some type of digital imaging system to be able to capture pictures and video. It is also a good idea to have a number of resources that can help during the incident.
+ For example: you may need documentation of a particular server or perhaps some network diagrams. It might also be a good idea to have security baselines and also have file hashes of all your critical files. It is also a good idea to know what you would use to be able to mitigate this particular incident , especially if you are dealing with malware or some other type of malicious software and it might be a good idea to have a known good OS images or copies of app images so that you can replace the bad code with the known good software.
+ And perhaps most importantly, there set of policies and procedures that everyone will follow during one of these security incidents.
+
+The Challenge of Detection:
+
+ Detecting a security incident is not something that is always easy to recognize. There may be different types of systems that are attacked during ta security incident and maybe it is difficult to simply look through the file system and determine if a security incident has occurred. Part of the problem is that, if you are connected to the internet, there will be attacks on your system constantly and it might be difficult to determine if an attack is simply a script that is running or this is a legitimate attack that has gained access to your systems.
+ even a security incident as common as a malware infection can be relatively complex process. So, you should make sure that you have the proper policies procedures on how to look for these incidents and what to do when one’ found.
+
+Analysis:
+
+ There are number of logs that you could view right now show instances where an attempt to attack your network was made. This can provide you with useful info about where attacks may be originating and what type of attacks they may choose to use.
+
+For example: Web server log can capture a great deal of info, especially when an attacker is going through a vulnerability scan against your web server. You should make sure that you have calendar so that when Microsoft will release their latest set of patches so that you can being the process of patching all of your systems and looking for anyone who may be attacking systems that have not already been patched. In some cases, the attackers will contact you directly and let you know that they are trying to break into your system, and this may be uncommon but it’s not unheard of in the hacking community.
+
+ It is obviously important to know when an attack occurs. And there may be things you can look at in your network that can give you a notification that an attack is underway.
+ For example: You might get an alert from IPS that a buffer overflow attempt was made against particular sever. Or maybe an antivirus report is showing that malware has been installed on a particular user’s workstation. You might also find a situation where an attacker has gained access to a system and begins making changes to the security configurations. If you have the proper monitoring in place, you will be informed if any of these configuration changes are made. And if you happen to find a large increase in network traffic, that could indicate that an attacker is trying to move a large amount of data out of your network into the hands of an attacker.
+
+Isolation and Containment:
+
+ If you do find that an attack is underway, you should stop that attack as quickly as possible. This is not a situation where you might want to wait to see what the attacker might do. Some security systems will provide a way to test for an attack inside of a sandbox.
+ A sandbox is closed system where you can run apps and see what the result of running the app might be. A good example is loading malware into a sandbox, running that malware and seeing what part of the OS is changed when the malware executes. Sometimes the process of isolating malware to sandbox can cause the malware itself to act differently. For example, a malware could recognize that it’s being run inside of a VM with a limited network connectivity and if it ever finds itself in that situation, it simply deletes itself.
+
+Recovery after an incident:
+
+ Once the incident is over, we need to go into recovery mode. Recovery mode means that we need to get rid of anything that is bad software and replace that with known good software. This means if we have malware, we may want to remove the malware or so imply reimage that system. We may need to disable any user accounts that were breached or created by an attacker, and we need to fix any vulnerabilities that allowed that attacker to get into our network in the first place.
+ If we have known good backups, we may want to use those to overwrite anything that may have been changed by the attackers or we may want to use the original installation media to completely reinstall the OS. The goal is to replace any files that may have been compromised, and then lock everything down so attackers can’t get back in.
+
+Lessons Learned:
+
+ After an attack is over is also a good time for reflection and to understand what may have occurred and how we can do better next time. A good place to do is in the post incident meeting.
+
+Post Incident Meeting:
+
+ This is a meeting where everyone can be in the same room, discuss the topics associated with the incident, and come up with ways to resolve the issue more efficiently next time. These types of meetings are best done as soon as possible after an incident was resolved.
+ This allows the people who participated in the incident to have a better memory of what happened. we can have better plans now when next incident occurs.
+
+Answer the tough questions:
+
+ During the post incident analysis, we may want to ask some difficult questions, such as, what exactly happened during this particular incident?
+ What was the timelines that took place from the very beginning of the incident all the way until the end?
+ It would also be interesting to see how well our planning process worked and we should be able to look at the docx of this incident and see if the process that we followed was the best choice for this particular situation. We can then make decision on what might be different next time and then integrate those changes into our incident planning process.
+ It might also be useful to know if we missed any of the indicators that might have warned us that this incident is going to occur. And if we did miss something, we might change our monitoring so that we look at some additional indicators.
+
+Training for an incident:
+
+ All of the planning that goes into incident response needs to take place before an incident even occurs. Once the incident is live and, on your network, it is too late to do any type of on-the-job training.
+ There needs to be extensive docx and testing of that docx so that everyone knows what to do during an incident and this means that we would have to understand what happens during the initial response? and what are the plans for investigation when an incident is identified? what is the process for reporting on this incident and so on?
+ In large organizations, especially with those multiple response teams, this training and planning process can be relatively expensive. But you may find all of the resources and money put into the training process may save you money when a big incident occurs.
+
+ Digital Forensics:
+
+Legal Hold: 
+
+ One type of data acquisition request is called legal hold.
+ This is a process usually initiated by a lawyer or some other type of legal; entity, and they will inform you in a docx of the type of data that needs to be stored and how much of that data needs to be available.
+ These requests are sent to data custodian, who obviously has access to all of the data associated with this particular request. The custodian will be responsible for evaluating the legal hold and understanding where to start with acquiring that data.
+ In most cases the organization will have a separate area where all of this ESI: Electronically Stored Information, will be held and all of the data that is described in the legal hold is acquired and stored in this repository.
+ And there may be a bit more involved than simply copying a file from one place to another. The info needs to acquire may be part of a much larger database or may be stored in a format that needs to be modified before storing it as part of the legal hold. For example, an email client might store data into a proprietary format, and you may need to convert that back to the text format of email to be able to store it in a form necessary for this legal hold.
+ It is also important that all of this info should be properly preserved. This is the data that is being requested by the courts, and you are responsible for making sure that data is safe and is able to be provided to the court when requested.
+
+Chain of custody:
+
+ One of the most important concepts in this type of data collection is that the info remains in its pristine or unmodified form during the duration of this analysis. This means when the data is first acquired and there need to a process in place to ensure the integrity of that data going forward.
+ Off course there will be most likely be multiple individuals who need to gain access to this info as this particular event proceeds. To better understand exactly who accesses this data and to confirm that the data has not changed during this process, we need to put in place a chain of custody. We can use hashes and digital signs to maintain the integrity of the data and understand exactly who accesses that data at any particular time. This allows us to understand exactly how this data has been stored during a particular time frame. We know who accessed the data and we can confirm the data that we are looking at in the future is exactly the same data that we originally collected.
+ There may be times with a legal hold when exactly what type of data you should be collecting and how the data should be stored. But in the case of broader security event, you may need to collect a lot of different types of data from different systems. An in those particular cases you will need to have a chain of custody for every bit of data that you have collected.
+
+Acquisition:
+
+ The acquisition of this data is commonly the first step, and we may need to obtain this data from many different types of sources. For example, the data might be stored on disk or in memory of a system, it might be part of the firmware, or files that are stored as part of files system.
+     We may also find that this is an attack that took place over a number of different systems, so we may need to collect data from multiple devices. We may need to gather info from servers that are on the network and there might be data stored in network devices. There might logs on a firewall that will also need to acquire. If this is a virtual system, we may want to take a full copy of everything associated with that VM. For example, you could take snapshot of that VM and that contains all of the files and all of the info about VM. Ans some of the most interesting info you will acquire may not be in obvious places. For example, the data inside of log files inside of a system and there may be data stored in recycle bin or some temporary storage. There might be browser bookmarks or saved logins and other temp files that can gather more details about this particular event.
+
+⇒ when dealing with this type of data, it is not only important to acquire the data, but it’s also important to document how the data was acquired. We often create detailed reports on the data acquisition process and not only to use internally for how this data was acquired , but in future if this is used for any type of legal proceeding, we will need a lot more info on how this particular data was acquired and how it is stored. This reporting process is going to give us the docx that we need. We often start with a summary or an overview of the entire event and the process that led us begin acquiring this data and there then needs to be detailed docx that all of the steps that took to get the data from the original source to the data that was acquired. This allows a third party to look over the process later and understand all of the integrity checks that were put in place so they can feel comfortable that the data they are looking at now is the proper representation of original data. You might also be required to create an analysis of the data that was acquired. We may also want to create conclusion.
+
+Preservation:
+
+ Preservation of this data becomes especially important and especially when these types of events turn into legal proceedings that can occur even years down the road.
+
+EDiscovery:
+
+ Ediscovery is the process of collecting, preparing, reviewing, interpreting, and producing electronic docs.
+ This Ediscovery process is acquiring data, and it doesn’t have any requirement that you provide analysis of the data. It’s simply listing out the type of data that needs to be acquired and putting that into your hands to properly acquire it.
+ This EDiscovery process often works in conjunction with formal forensics process. So, you might be asked to collect an image of a particular drive and provide that drive to digital forensics professional. Creating the image of the drive is the only thought required by the Ediscovery process and then  that image is handed over to the forensics team, they might look at the data on the drive and make determination of whether the data is still on that drive or whether the data may have been deleted. And that point they can go through the processes and procedures for undeleting or recovering that data.
+
